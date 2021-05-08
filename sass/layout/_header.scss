@@ -1,0 +1,80 @@
+header{
+    background-color: $black;
+
+    .pre-header{
+        background: linear-gradient(to right, rgba(6,6,6,1) 0%,rgba(46,46,46,1) 100%);
+        height: 30px;
+        padding-top: 5px;
+
+        ul{
+            list-style: none;
+            float: right;
+            li{
+                display: inline-block;
+                margin-right: 25px;
+                margin: 5px;
+
+                &:first-child{
+                    a{
+                        color: $orange;
+                        &:hover{
+                            color: $orange;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                a{
+                    color: $gray;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    nav{
+        padding: 15px;
+
+        ul{
+            list-style: none;
+        
+            li{
+                display: inline-block;
+                margin-left: 30px;
+                position: relative;
+                top: -20px;
+
+                &:first-child{
+                    top: -5px;
+                    img{
+                        width: 200px;
+                    }
+                    a:hover{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                
+                a{
+                    font-size: 16px;
+                    color: $white;
+                    text-transform: uppercase;
+                    position: relative;
+                    
+                    &:hover{
+                        &:after{
+                            content: '';
+                            display: block;
+                            background-color: $white;
+                            height: 2px;
+                            width: 100%;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
