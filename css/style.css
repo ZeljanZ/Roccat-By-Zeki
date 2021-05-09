@@ -60,13 +60,33 @@ header {
             width: 100%;
             position: absolute; }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif; }
+section.hero h1 {
+  font-size: 68px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+  section.hero h1 span {
+    font-weight: 600;
+    background-image: -webkit-linear-gradient(145deg, #a2fe73, #35fdb2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear; }
 
-a {
-  text-decoration: none; }
+section.hero video {
+  width: 100%; }
 
-body {
-  background-color: black; }
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg); }
+  to {
+    -webkit-filter: hue-rotate(-360deg); } }
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg); }
+  to {
+    -webkit-filter: hue-rotate(-360deg); } }
