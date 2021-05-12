@@ -20,6 +20,8 @@ section.hero{
     video{
         width: 100%;
     }
+
+    
 }
 @keyframes hue{
     from{
@@ -28,4 +30,5 @@ section.hero{
     to{
         -webkit-filter: hue-rotate(-360deg)
     }
+
 }
