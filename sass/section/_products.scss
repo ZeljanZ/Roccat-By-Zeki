@@ -10,10 +10,31 @@ section.products{
         font-weight: 300;
         margin: auto;
         margin-bottom: 70px;
+        
+        @media (max-width:$sm) {
+            font-size: 24px;
+            padding: 15px;
+        }
+        @media (max-width:$md) {
+            font-size: 30px;
+            padding: 15px;
+        }
     }
     .container{
         display: flex;
         margin-left: 200px;
+
+        @media (max-width:$lg) {
+            display: block;
+            margin-left: 0px;
+        }
+        @media (max-width:$md) {
+            display: block;
+        }
+        @media (max-width: $sm) {
+            display: block;
+        }
+        
 
         .products-item{
             // background-repeat: no-repeat;
@@ -21,7 +42,22 @@ section.products{
             width: 400px;
             color: $white;
             position: relative;
+            background-size: cover;
+            
+            
+            @media (max-width:$lg) {
+                height: 750px;
+                width: auto;
+            }
+            @media (max-width:$md) {
+                height: 550px;
+                width: auto;
 
+            }
+            @media (max-width: $sm) {
+                display: block;
+
+            }
             &:hover{
                 transition: 0.4s;
                 .overlay{
@@ -71,7 +107,9 @@ section.products{
                     width: 90px;
                     margin: 35%;
                     padding: 10px;
-                    
+                    @media (max-width:$md) {
+                        margin-left: 295px;
+                    }       
                 }
             }
         }
