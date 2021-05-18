@@ -9,10 +9,14 @@ header{
         ul{
             list-style: none;
             float: right;
+            margin-right: 10px;
             li{
                 display: inline-block;
                 margin-right: 25px;
                 margin: 5px;
+                @media (max-width:$lg){
+                    margin-right: 0;
+                }
 
                 &:first-child{
                     a{
@@ -34,20 +38,81 @@ header{
     }
 
     nav{
-        padding: 15px;
+        padding-top: 15px;
         background-color: $black;
+        
         width: 100%;
         z-index: 2;
+        @media (max-width:$lg){
+            position: relative;
+            
+        }
 
         &.fixed-nav{
             position: fixed;
             top: 0;
             transition: 0.3s;
+            // @media (max-width:$lg){
+            //     position: initial;
+            // }
+            // zelim da je fixed kad zse skrola
+
+        }
+        .hamburger-menu-button{
+            background-color: transparent;
+            border: none;
+            font-size: 38px;
+            color: $white;
+            display: none;
+            padding: 20px;
+            outline: none;
+            .fa-times{
+                display: none;
+            }
+
+            &.opened{
+                .fa-times{
+                    display: block;
+                }
+                .fa-bars{
+                    display: none;
+                }
+            }
+
+            :hover{
+                color: $blue;
+            }
+
+            @media (max-width:$lg){
+                display: block;
+            }
+        }
+        .logo-mobile{
+            text-align: center;
+            margin-top: -65px;
+            display: none;
+            @media (max-width:$lg){
+                display: block;
+            }
+            a{
+                img{
+                    height: 40px;
+                }
+            }
         }
 
         ul{
             list-style: none;
             float: left;
+            
+            @media (max-width:$lg){
+                display: none;
+                width: 100%;
+                position: absolute;
+                background-color: $black;
+                left: 0;
+                right: 0;
+            }
         
             li{
                 display: inline-block;
@@ -66,7 +131,19 @@ header{
                         }
                     }
                 }
-                
+                @media (max-width:$lg){
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    margin-top: 25px;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                }
+                @media (max-width:$lg){
+                    &:first-child{
+                        display: none;
+                    }
+                }
                 a{
                     font-size: 16px;
                     color: $white;
@@ -89,7 +166,13 @@ header{
         .nav-right-side{
             float: right;
             margin-right: 50px;
-            margin-top: 5px;
+            margin-top: -1px;
+
+            @media (max-width:$lg){
+                position: absolute;
+                top: 45px;
+                right: 0;
+            }
                 a{
                     color: $white;
                     font-size: 25px;
