@@ -8,12 +8,12 @@
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 3;
     text-align: center;
-    padding: 220px;
+    padding: 320px;
 
     a{
         position: absolute;
-        top: 170px;
-        right: 570px;
+        top: 250px;
+        right: 600px;
         color: $white;
         font-size: 30px;
 
@@ -26,9 +26,30 @@
         display: block;
         margin: auto;
 
-        input{
-            height: 50px;
-            width: 50%;
+            input{
+                height: 50px;
+                width: 50%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $white;
+                outline: none;
+                color: $white;
+                font-size: 20px;
+                padding-left: 15px;
+            }
+            button{
+                
+                    background-color: transparent;
+                    border: none;
+                    color: $white;
+                    font-size: 25px;
+                    cursor: pointer;
+                    margin-left: -45px;
+                    outline: none;
+                    
+                    :hover{
+                        color: $blue;
+                    }
+            }
         }
-    }
 }

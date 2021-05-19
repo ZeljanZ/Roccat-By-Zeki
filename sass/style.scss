@@ -1,8 +1,14 @@
 @import 'variables/variables';
 @import 'base/reset';
+
 @import 'layout/header';
+
 @import 'section/hero';
 @import 'section/featured';
 @import 'section/products';
+@import 'section/products-hero';
+@import 'section/products-list';
+
 @import 'features/search';
 @import 'features/loader';
+
