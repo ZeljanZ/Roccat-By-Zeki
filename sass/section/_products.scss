@@ -1,13 +1,15 @@
 section.products{
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: $white;
 
     h2{
-        color: $white;
+        color: $black;
         max-width: 1000px;
         text-align: center;
-        font-size: 38px;
-        font-weight: 300;
+        font-size: 58px;
+        font-weight: 400;
+        text-transform: uppercase;
         margin: auto;
         margin-bottom: 70px;
         
@@ -22,7 +24,7 @@ section.products{
     }
     .container{
         display: flex;
-        margin-left: 200px;
+        justify-content: space-evenly;
 
         @media (max-width:$lg) {
             display: block;
@@ -59,7 +61,7 @@ section.products{
 
             }
             &:hover{
-                transition: 0.4s;
+                transition: 0.5s;
                 .overlay{
                     display: block;
                     background-color: rgba(0, 0, 0, 0.5);
@@ -69,6 +71,8 @@ section.products{
                     right: 0;
                     left: 0;
                 }
+                -webkit-box-shadow: 0 10px 35px 5px #0e0d0d;
+                box-shadow: 0 10px 35px 5px #0e0d0d;
             }
 
             &.products-kayboard{
@@ -76,6 +80,12 @@ section.products{
             }
             &.products-headset{
             background-image: url("../img/products-2.jfif");
+            }
+            &.products-mouse{
+            background-image: url("../img/mouse.jpg");
+            }
+            &.products-mousepad{
+            background-image: url("../img/mouse-pad.jpg");
             }
             
             .products-info{
@@ -105,7 +115,7 @@ section.products{
                     margin-top: 45%;
                     background-color: $white;
                     width: 90px;
-                    margin: 35%;
+                    margin: 33%;
                     padding: 10px;
                     @media (max-width:$md) {
                         margin-left: 295px;

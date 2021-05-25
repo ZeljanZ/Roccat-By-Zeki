@@ -248,16 +248,52 @@ section.hero video {
       @media (max-width: 767px) {
         .featured-item p {
           font-size: 18px; } }
+    .featured-item a {
+      position: absolute;
+      bottom: -12%;
+      left: 33%;
+      text-align: center;
+      padding: 10px 40px;
+      background-color: rgba(242, 242, 242, 0.85);
+      margin: 0 auto;
+      color: #252525;
+      border-radius: 50px;
+      color: gray;
+      font-size: 15px;
+      text-transform: uppercase; }
+      .featured-item a:hover {
+        background-color: white;
+        cursor: pointer;
+        color: #252525; }
+
+.roccat-science h3 {
+  font-size: 24px;
+  font-weight: 400;
+  width: auto;
+  text-align: center;
+  color: white;
+  padding: 100px 20px; }
+
+.roccat-science h2 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 40px 10px; }
 
 section.products {
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background-color: white; }
   section.products h2 {
-    color: white;
+    color: black;
     max-width: 1000px;
     text-align: center;
-    font-size: 38px;
-    font-weight: 300;
+    font-size: 58px;
+    font-weight: 400;
+    text-transform: uppercase;
     margin: auto;
     margin-bottom: 70px; }
     @media (max-width: 575px) {
@@ -272,7 +308,9 @@ section.products {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 200px; }
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
     @media (max-width: 991px) {
       section.products .container {
         display: block;
@@ -301,8 +339,10 @@ section.products {
         section.products .container .products-item {
           display: block; } }
       section.products .container .products-item:hover {
-        -webkit-transition: 0.4s;
-        transition: 0.4s; }
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        -webkit-box-shadow: 0 10px 35px 5px #0e0d0d;
+        box-shadow: 0 10px 35px 5px #0e0d0d; }
         section.products .container .products-item:hover .overlay {
           display: block;
           background-color: rgba(0, 0, 0, 0.5);
@@ -315,6 +355,10 @@ section.products {
         background-image: url("../img/products-1.jpg"); }
       section.products .container .products-item.products-headset {
         background-image: url("../img/products-2.jfif"); }
+      section.products .container .products-item.products-mouse {
+        background-image: url("../img/mouse.jpg"); }
+      section.products .container .products-item.products-mousepad {
+        background-image: url("../img/mouse-pad.jpg"); }
       section.products .container .products-item .products-info {
         padding: 30px; }
         section.products .container .products-item .products-info h3 {
@@ -336,7 +380,7 @@ section.products {
           margin-top: 45%;
           background-color: white;
           width: 90px;
-          margin: 35%;
+          margin: 33%;
           padding: 10px; }
           @media (max-width: 767px) {
             section.products .container .products-item .overlay a {
@@ -415,7 +459,8 @@ section.products {
     transition: 0.3s; }
     .products-list .products-filter li.active {
       background-color: #f2f2f2;
-      color: #1c1c1c; }
+      color: #1c1c1c;
+      padding-bottom: 20px; }
     .products-list .products-filter li:hover {
       color: #f2f2f2;
       background-color: #333; }
@@ -571,6 +616,211 @@ section.products {
         height: 100%; }
     .product-inner-wrapper .left-right-products .side-product-desc {
       background-color: #151515; }
+
+/* Slideshow container */
+.slideshow-container {
+  width: auto;
+  position: relative;
+  height: auto; }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%; }
+  .mySlides .slides-des-1 .images-holder-1 {
+    width: auto;
+    background-image: url("../img/slide1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px; }
+  .mySlides .slides-des-1 .text, .mySlides .slides-des-1 h3 {
+    width: auto;
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 15px 34%;
+    margin: auto;
+    position: absolute;
+    bottom: 120px;
+    text-align: center; }
+  .mySlides .slides-des-1 h3 {
+    bottom: 300px;
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 0 35%;
+    margin-bottom: -25px; }
+    @media (max-width: 991px) {
+      .mySlides .slides-des-1 h3 {
+        margin: auto; } }
+    .mySlides .slides-des-1 h3 span {
+      color: yellow; }
+  .mySlides .slides-des-1 a {
+    position: absolute;
+    bottom: 50px;
+    right: 40%;
+    left: 40%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color: rgba(242, 242, 242, 0.85);
+    margin: 0 auto;
+    color: #252525;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .mySlides .slides-des-1 a:hover {
+      background-color: white;
+      cursor: pointer;
+      color: #252525; }
+  .mySlides .slides-des-2 .images-holder-2 {
+    width: auto;
+    background-image: url("../img/slide-2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px; }
+  .mySlides .slides-des-2 img {
+    width: auto;
+    padding: 0px 16%;
+    margin: auto;
+    position: absolute;
+    bottom: 290px; }
+  .mySlides .slides-des-2 .text, .mySlides .slides-des-2 .slides-des-1 h3, .mySlides .slides-des-1 .slides-des-2 h3 {
+    width: auto;
+    color: #f2f2f2;
+    max-width: 650px;
+    font-size: 22px;
+    padding: 0 150px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 190px;
+    text-align: center; }
+  .mySlides .slides-des-2 a {
+    position: absolute;
+    bottom: 100px;
+    left: 15.5%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color: rgba(242, 242, 242, 0.85);
+    margin: auto;
+    color: #252525;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .mySlides .slides-des-2 a:hover {
+      background-color: white;
+      cursor: pointer;
+      color: #252525; }
+  .mySlides .slides-des-3 .images-holder-3 {
+    width: 100%;
+    background-image: url("../img/slide-4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px; }
+  .mySlides .slides-des-3 h3 {
+    position: absolute;
+    color: white;
+    bottom: 250px;
+    left: 150px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 4px;
+    padding: 25px;
+    margin: auto;
+    max-width: 500px; }
+  .mySlides .slides-des-3 .text, .mySlides .slides-des-3 .slides-des-1 h3, .mySlides .slides-des-1 .slides-des-3 h3 {
+    position: absolute;
+    color: white;
+    bottom: 150px;
+    left: 150px;
+    padding: 25px;
+    padding-right: 35px;
+    font-size: 20px;
+    max-width: 600px; }
+  .mySlides .slides-des-3 a {
+    position: absolute;
+    bottom: 70px;
+    left: 9%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color: rgba(242, 242, 242, 0.85);
+    margin: auto;
+    color: #252525;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .mySlides .slides-des-3 a:hover {
+      background-color: white;
+      cursor: pointer;
+      color: #252525; }
+
+/* Next & previous buttons */
+.prev, .next {
+  background-color: #5c5a5a60;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 2px;
+  width: 60px;
+  border-radius: 20px;
+  margin: 30px 2px;
+  background-color: #bbb;
+  border-radius: 0;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #f97000;
+  height: 7px;
+  border-radius: 20px; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 1.8s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
 
 .search-wrapper {
   display: none;

@@ -67,5 +67,45 @@
                 
             }
         }
+        a{
+        position: absolute;
+        bottom: -12%;
+        left: 33%;
+        // @media
+        text-align: center;
+        padding: 10px 40px;
+        background-color:rgba(242, 242, 242, 0.85);
+        margin: 0 auto;
+        color: $dark-grey;
+        border-radius: 50px;
+        color: gray;
+        font-size: 15px;
+        text-transform: uppercase;
+
+            &:hover{
+                background-color: $white;
+                cursor: pointer;
+                color: $dark-grey;
+            }
+        }
     }
 }
+.roccat-science{
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+            width: auto;;
+            text-align: center;
+            color: $white;
+            padding: 100px 20px;
+        }
+        h2{
+            color: $white;
+            text-align: center;
+            font-size: 70px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 40px 10px;
+        }
+    }
