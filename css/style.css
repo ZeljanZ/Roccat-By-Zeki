@@ -822,6 +822,227 @@ section.products {
   to {
     opacity: 1; } }
 
+.slideshow-container-two {
+  width: auto;
+  position: relative;
+  margin: auto;
+  height: auto; }
+
+/* Hide the images by default */
+.mySlides-two {
+  display: none;
+  width: 100%; }
+  .mySlides-two .slides-two-des-1 .images-holder-1 {
+    width: auto;
+    background-image: url("../img/slide-two-1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px; }
+  .mySlides-two .slides-two-des-1 h3 {
+    position: absolute;
+    color: white;
+    bottom: 350px;
+    left: 150px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 1px;
+    padding: 25px;
+    margin: 50px auto; }
+    .mySlides-two .slides-two-des-1 h3 span {
+      color: #00d2ff; }
+  .mySlides-two .slides-two-des-1 .text, .mySlides-two .slides-two-des-1 .mySlides .slides-des-1 h3, .mySlides .slides-des-1 .mySlides-two .slides-two-des-1 h3 {
+    width: auto;
+    color: #f2f2f2;
+    max-width: 650px;
+    font-size: 25px;
+    padding: 0px 175px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 270px;
+    line-height: 35px; }
+  .mySlides-two .slides-two-des-1 a {
+    position: absolute;
+    bottom: 170px;
+    left: 9%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color: rgba(242, 242, 242, 0.85);
+    margin: auto;
+    color: #252525;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .mySlides-two .slides-two-des-1 a:hover {
+      background-color: white;
+      cursor: pointer;
+      color: #252525; }
+  .mySlides-two .slides-two-des-2 .images-holder-2 {
+    width: auto;
+    background-image: url("../img/slide-two-2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px; }
+  .mySlides-two .slides-two-des-2 img {
+    width: auto;
+    padding: 0px 16%;
+    margin: auto;
+    position: absolute;
+    bottom: 290px; }
+  .mySlides-two .slides-two-des-2 h3 {
+    position: absolute;
+    color: white;
+    bottom: 350px;
+    left: 150px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 1px;
+    padding: 25px;
+    margin: 50px auto; }
+    .mySlides-two .slides-two-des-2 h3 span {
+      color: yellow; }
+  .mySlides-two .slides-two-des-2 .text, .mySlides-two .slides-two-des-2 .mySlides .slides-des-1 h3, .mySlides .slides-des-1 .mySlides-two .slides-two-des-2 h3 {
+    width: auto;
+    color: #f2f2f2;
+    max-width: 650px;
+    font-size: 26px;
+    padding: 0px 175px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 270px;
+    line-height: 35px; }
+  .mySlides-two .slides-two-des-2 a {
+    position: absolute;
+    bottom: 170px;
+    left: 9%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color: rgba(242, 242, 242, 0.85);
+    margin: auto;
+    color: #252525;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .mySlides-two .slides-two-des-2 a:hover {
+      background-color: white;
+      cursor: pointer;
+      color: #252525; }
+  .mySlides-two .slides-two-des-3 .images-holder-3 {
+    width: 100%;
+    background-image: url("../img/slide-two-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px; }
+  .mySlides-two .slides-two-des-3 h3 {
+    position: absolute;
+    color: white;
+    bottom: 350px;
+    left: 150px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 1px;
+    padding: 25px;
+    margin: 50px auto; }
+    .mySlides-two .slides-two-des-3 h3 span {
+      color: #00d2ff; }
+  .mySlides-two .slides-two-des-3 .text, .mySlides-two .slides-two-des-3 .mySlides .slides-des-1 h3, .mySlides .slides-des-1 .mySlides-two .slides-two-des-3 h3 {
+    width: auto;
+    color: #f2f2f2;
+    max-width: 650px;
+    font-size: 25px;
+    padding: 0px 175px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 270px;
+    line-height: 35px; }
+  .mySlides-two .slides-two-des-3 a {
+    position: absolute;
+    bottom: 170px;
+    left: 9%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color: rgba(242, 242, 242, 0.85);
+    margin: auto;
+    color: #252525;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .mySlides-two .slides-two-des-3 a:hover {
+      background-color: white;
+      cursor: pointer;
+      color: #252525; }
+
+/* Next & previous buttons */
+.prev-two, .next-two {
+  background-color: #5c5a5a60;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+/* Position the "next button" to the right */
+.next-two {
+  right: 0;
+  border-radius: 10px 0 0 10px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-two:hover, .next-two:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* The dots/bullets/indicators */
+.dot-two {
+  cursor: pointer;
+  height: 2px;
+  width: 60px;
+  border-radius: 20px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 0;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
+
+.active, .dot-two:hover {
+  background-color: #f97000;
+  height: 7px;
+  border-radius: 20px; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 1.8s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
 .search-wrapper {
   display: none;
   position: fixed;

@@ -1,0 +1,265 @@
+.slideshow-container-two {
+    width:auto;
+    position: relative;
+    margin: auto;
+    height: auto;
+    }
+    
+  /* Hide the images by default */
+    .mySlides-two {
+        display: none;
+        width: 100%;
+
+    .slides-two-des-1{
+
+    .images-holder-1{
+        width: auto;
+        background-image: url("../img/slide-two-1.jpg");
+        background-size:cover;
+        background-position: center;
+        height: 650px;
+    }
+    h3{
+        position: absolute;
+        color: $white;
+        bottom: 350px;
+        left: 150px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 46px;
+        letter-spacing: 1px;
+        padding: 25px;
+        margin: 50px auto;
+        
+        span{
+            color:#00d2ff;
+        }
+    }
+    .text {
+        width: auto;
+        color: #f2f2f2;
+        max-width: 650px;
+        font-size: 25px;
+        padding: 0px 175px;
+        // padding-right: 250px;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 270px;
+        line-height: 35px;
+    }
+    a{
+        position: absolute;
+        bottom: 170px;
+        //@media
+        left: 9%;
+        text-align: center;
+        padding: 15px 120px;
+        background-color:rgba(242, 242, 242, 0.85);
+        margin: auto;
+        color: $dark-grey;
+        border-radius: 50px;
+        color: gray;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $white;
+            cursor: pointer;
+            color: $dark-grey;
+        }
+    }
+}
+
+    .slides-two-des-2{
+    
+    .images-holder-2{
+        width: auto;
+        background-image: url("../img/slide-two-2.jpg");
+        background-size:cover;
+        background-position: center;
+        height: 650px;
+    }
+    img{
+        width: auto;
+        padding: 0px 16%;
+        margin: auto;
+        position: absolute;
+        bottom: 290px;
+    }
+    h3{
+        position: absolute;
+        color: $white;
+        bottom: 350px;
+        left: 150px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 46px;
+        letter-spacing: 1px;
+        padding: 25px;
+        margin: 50px auto;
+        
+        span{
+            color: yellow;
+        }
+    }
+    .text {
+        width: auto;
+        color: #f2f2f2;
+        max-width: 650px;
+        font-size: 26px;
+        padding: 0px 175px;
+        // padding-right: 250px;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 270px;
+        line-height: 35px;
+    }
+    a{
+        position: absolute;
+        bottom: 170px;
+        //@media
+        left: 9%;
+        text-align: center;
+        padding: 15px 120px;
+        background-color:rgba(242, 242, 242, 0.85);
+        margin: auto;
+        color: $dark-grey;
+        border-radius: 50px;
+        color: gray;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $white;
+            cursor: pointer;
+            color: $dark-grey;
+        }
+    }
+    
+}
+
+    .slides-two-des-3{
+
+    .images-holder-3{
+        width: 100%;
+        background-image: url("../img/slide-two-3.jpg");
+        background-size:cover;
+        background-position: center;
+        height: 650px;
+    }
+    h3{
+        position: absolute;
+        color: $white;
+        bottom: 350px;
+        left: 150px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 46px;
+        letter-spacing: 1px;
+        padding: 25px;
+        margin: 50px auto;
+        
+        span{
+            color:#00d2ff;
+        }
+    }
+    .text {
+        width: auto;
+        color: #f2f2f2;
+        max-width: 650px;
+        font-size: 25px;
+        padding: 0px 175px;
+        // padding-right: 250px;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 270px;
+        line-height: 35px;
+    }
+    a{
+        position: absolute;
+        bottom: 170px;
+        //@media
+        left: 9%;
+        text-align: center;
+        padding: 15px 120px;
+        background-color:rgba(242, 242, 242, 0.85);
+        margin: auto;
+        color: $dark-grey;
+        border-radius: 50px;
+        color: gray;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $white;
+            cursor: pointer;
+            color: $dark-grey;
+        }
+    }
+}
+}
+
+  /* Next & previous buttons */
+    .prev-two, .next-two {
+        background-color: $slider-grey;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 10px 10px 0;
+        user-select: none;
+    }
+
+  /* Position the "next button" to the right */
+    .next-two {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    }
+
+  /* On hover, add a black background color with a little bit see-through */
+    .prev-two:hover, .next-two:hover {
+    background-color: rgba(0,0,0,0.8);
+    }  
+  /* The dots/bullets/indicators */
+    .dot-two {
+        cursor: pointer;
+        height: 2px;
+        width: 60px;
+        border-radius: 20px;
+        margin: 0px 2px;
+        background-color: #bbb;
+        border-radius: 0;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        // transition: 0.2s;
+    }
+    
+    .active, .dot-two:hover {
+        background-color: $orange;
+        height: 7px;
+        border-radius: 20px;
+    }
+    
+  /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.8s;
+        animation-name: fade;
+        animation-duration: 1.8s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
