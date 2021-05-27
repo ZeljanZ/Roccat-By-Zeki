@@ -823,7 +823,7 @@ section.products {
     opacity: 1; } }
 
 .slideshow-container-two {
-  width: auto;
+  width: 100%;
   position: relative;
   margin: auto;
   height: auto; }
@@ -1020,6 +1020,133 @@ section.products {
   transition: background-color 0.6s ease; }
 
 .active, .dot-two:hover {
+  background-color: #f97000;
+  height: 7px;
+  border-radius: 20px; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 1.8s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.slideshow-container-three {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #000000), color-stop(50%, #2A2A2A));
+  background-image: linear-gradient(to bottom, #000000 50%, #2A2A2A 50%);
+  position: relative;
+  margin: auto;
+  height: auto;
+  padding-top: 200px; }
+
+/* Hide the images by default */
+.mySlides-three {
+  display: none;
+  width: 100%; }
+  .mySlides-three .slides-three-des-1 {
+    height: 100vh; }
+    .mySlides-three .slides-three-des-1 img {
+      height: 730px;
+      width: 882px;
+      padding-left: 150px; }
+  .mySlides-three .slides-three-des-2 {
+    height: 100vh; }
+    .mySlides-three .slides-three-des-2 h3 {
+      color: white;
+      bottom: 350px;
+      left: 150px;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 46px;
+      letter-spacing: 1px;
+      padding: 25px;
+      margin: 50px auto; }
+      .mySlides-three .slides-three-des-2 h3 span {
+        color: yellow; }
+    .mySlides-three .slides-three-des-2 .text, .mySlides-three .slides-three-des-2 .mySlides .slides-des-1 h3, .mySlides .slides-des-1 .mySlides-three .slides-three-des-2 h3 {
+      width: auto;
+      color: #f2f2f2;
+      max-width: 650px;
+      font-size: 26px;
+      padding: 0px 175px;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 270px;
+      line-height: 35px; }
+    .mySlides-three .slides-three-des-2 a {
+      left: 9%;
+      text-align: center;
+      padding: 15px 120px;
+      background-color: rgba(242, 242, 242, 0.85);
+      margin: auto;
+      color: #252525;
+      border-radius: 50px;
+      color: gray;
+      font-size: 18px;
+      text-transform: uppercase; }
+      .mySlides-three .slides-three-des-2 a:hover {
+        background-color: white;
+        cursor: pointer;
+        color: #252525; }
+  .mySlides-three .slides-three-des-3 {
+    height: 100vh; }
+
+/* Next & previous buttons */
+.prev-three, .next-three {
+  background-color: #5c5a5a60;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -39px;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+/* Position the "next button" to the right */
+.next-three {
+  right: 0;
+  border-radius: 10px 0 0 10px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-three:hover, .next-three:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* The dots/bullets/indicators */
+.dot-three {
+  cursor: pointer;
+  height: 2px;
+  width: 60px;
+  border-radius: 20px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 0;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
+
+.active, .dot-three:hover {
   background-color: #f97000;
   height: 7px;
   border-radius: 20px; }

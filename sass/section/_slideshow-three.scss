@@ -1,0 +1,147 @@
+.slideshow-container-three {
+    width:100%;
+    background-image: linear-gradient(to bottom, #000000 50%, #2A2A2A 50%);
+    position: relative;
+    margin: auto;
+    height: auto;
+    padding-top: 200px;
+    }
+    
+  /* Hide the images by default */
+    .mySlides-three {
+        display: none;
+        width: 100%;
+
+    .slides-three-des-1{
+        height: 100vh;
+        
+        img{
+            height: 730px;
+            width: 882px;
+            padding-left: 150px;
+        }
+}
+
+    .slides-three-des-2{
+        height: 100vh;
+    
+    h3{
+        color: $white;
+        bottom: 350px;
+        left: 150px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 46px;
+        letter-spacing: 1px;
+        padding: 25px;
+        margin: 50px auto;
+        
+        span{
+            color: yellow;
+        }
+    }
+    .text {
+        width: auto;
+        color: #f2f2f2;
+        max-width: 650px;
+        font-size: 26px;
+        padding: 0px 175px;
+        // padding-right: 250px;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 270px;
+        line-height: 35px;
+    }
+    a{
+        //@media
+        left: 9%;
+        text-align: center;
+        padding: 15px 120px;
+        background-color:rgba(242, 242, 242, 0.85);
+        margin: auto;
+        color: $dark-grey;
+        border-radius: 50px;
+        color: gray;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $white;
+            cursor: pointer;
+            color: $dark-grey;
+        }
+    }
+    
+}
+
+    .slides-three-des-3{
+        height: 100vh;
+    
+    
+}
+}
+
+  /* Next & previous buttons */
+    .prev-three, .next-three {
+        background-color: $slider-grey;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -39px;
+        padding: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 10px 10px 0;
+        user-select: none;
+    }
+
+  /* Position the "next button" to the right */
+    .next-three {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    }
+
+  /* On hover, add a black background color with a little bit see-through */
+    .prev-three:hover, .next-three:hover {
+    background-color: rgba(0,0,0,0.8);
+    }  
+  /* The dots/bullets/indicators */
+    .dot-three{
+        cursor: pointer;
+        height: 2px;
+        width: 60px;
+        border-radius: 20px;
+        margin: 0px 2px;
+        background-color: #bbb;
+        border-radius: 0;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        // transition: 0.2s;
+    }
+    
+    .active, .dot-three:hover {
+        background-color: $orange;
+        height: 7px;
+        border-radius: 20px;
+    }
+    
+  /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.8s;
+        animation-name: fade;
+        animation-duration: 1.8s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
