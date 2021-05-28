@@ -14,70 +14,271 @@
 
     .slides-three-des-1{
         height: 100vh;
-        
+        position: relative;
+
+        h2{
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 60px;
+            position: absolute;
+            right: 34.5%;
+            top: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
         img{
             height: 730px;
             width: 882px;
-            padding-left: 150px;
+            padding-left: 160px;
+        }
+
+        .slide-three-caption{
+            background-color: $white;
+            width: 472px;
+            height: 280px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            line-height: 43px;
+            text-align: justify;
+            position: absolute;
+            border-radius: 7%;
+            top: 250px;
+            left: 50%;
+            
+            &::after{
+                content: " ";
+                display: block;
+                position: absolute;
+                left: -25px;
+                top: 40%;
+                border-top: 26px solid transparent;
+                border-right: 26px solid #ffffff;
+                border-left: none;
+                border-bottom: 26px solid transparent;
+            }
+
+            img{
+                // top: ;
+                margin-top: -40px;
+                margin-left: -70px;
+                max-height: 95px;
+                max-width: 85px;
+                padding-bottom: 10px;
+            }
+            .message{
+                font-size: 20px;
+                color: gray;
+                font-style: italic;
+            }
+            .name{
+                color: gray;
+                font-weight: 300;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-bottom: 10px;
+            }
+            a{
+                text-align: center;
+                padding: 10px 40px;
+                background-color:rgba(25, 25, 25, 0.85);
+                margin: auto;
+                color: $white;
+                border-radius: 50px;
+                font-size: 18px;
+                text-transform: capitalize;
+                margin-left: 60px;
+                margin-right: 40px;
+
+                &:hover{
+                    background-color: $dark-grey;
+                    cursor: pointer;
+                    color: $white;
+                }
+            }
         }
 }
 
     .slides-three-des-2{
         height: 100vh;
-    
-    h3{
-        color: $white;
-        bottom: 350px;
-        left: 150px;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 46px;
-        letter-spacing: 1px;
-        padding: 25px;
-        margin: 50px auto;
-        
-        span{
-            color: yellow;
-        }
-    }
-    .text {
-        width: auto;
-        color: #f2f2f2;
-        max-width: 650px;
-        font-size: 26px;
-        padding: 0px 175px;
-        // padding-right: 250px;
-        position: absolute;
-        margin: 0 auto;
-        bottom: 270px;
-        line-height: 35px;
-    }
-    a{
-        //@media
-        left: 9%;
-        text-align: center;
-        padding: 15px 120px;
-        background-color:rgba(242, 242, 242, 0.85);
-        margin: auto;
-        color: $dark-grey;
-        border-radius: 50px;
-        color: gray;
-        font-size: 18px;
-        text-transform: uppercase;
+        position: relative;
 
-        &:hover{
-            background-color: $white;
-            cursor: pointer;
-            color: $dark-grey;
+        h2{
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 60px;
+            position: absolute;
+            right: 34.5%;
+            top: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
-    }
-    
+        img{
+            height: 730px;
+            width: 882px;
+            padding-left: 160px;
+        }
+        .slide-three-caption{
+            background-color: $white;
+            width: 432px;
+            height: 280px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            line-height: 43px;
+            text-align: justify;
+            position: absolute;
+            border-radius: 7%;
+            top: 250px;
+            left: 50%;
+            
+            &::after{
+                content: " ";
+                display: block;
+                position: absolute;
+                left: -25px;
+                top: 40%;
+                border-top: 26px solid transparent;
+                border-right: 26px solid #ffffff;
+                border-left: none;
+                border-bottom: 26px solid transparent;
+            }
+
+            img{
+                // top: ;
+                margin-top: -40px;
+                margin-left: -55px;
+                max-height: 95px;
+                max-width: 85px;
+                padding-bottom: 10px;
+            }
+            .message{
+                margin-left: -20px;
+                font-size: 20px;
+                color: gray;
+                font-style: italic;
+            }
+            .name{
+                color: gray;
+                font-weight: 300;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-left: 70px;
+                padding-right: 40px;
+                margin-bottom: 10px;
+            }
+            a{
+                text-align: center;
+                padding: 10px 40px;
+                background-color:rgba(25, 25, 25, 0.85);
+                margin: auto;
+                color: $white;
+                border-radius: 50px;
+                font-size: 18px;
+                text-transform: capitalize;
+                margin-left: 60px;
+                margin-right: 40px;
+
+                &:hover{
+                    background-color: $dark-grey;
+                    cursor: pointer;
+                    color: $white;
+                }
+            }
+        }
 }
 
     .slides-three-des-3{
         height: 100vh;
-    
-    
+        position: relative;
+
+        h2{
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 60px;
+            position: absolute;
+            right: 34.5%;
+            top: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        img{
+            height: 730px;
+            width: 882px;
+            padding-left: 160px;
+        }
+        .slide-three-caption{
+            background-color: $white;
+            width: 372px;
+            height: 280px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            line-height: 43px;
+            text-align: justify;
+            position: absolute;
+            border-radius: 7%;
+            top: 250px;
+            left: 50%;
+            
+            &::after{
+                content: " ";
+                display: block;
+                position: absolute;
+                left: -25px;
+                top: 30%;
+                border-top: 26px solid transparent;
+                border-right: 26px solid #ffffff;
+                border-left: none;
+                border-bottom: 26px solid transparent;
+            }
+
+            img{
+                margin-top: -40px;
+                margin-left: -55px;
+                max-height: 95px;
+                max-width: 85px;
+                padding-bottom: 10px;
+            }
+            .message{
+                margin-left: 50px;
+                font-size: 20px;
+                color: gray;
+                font-style: italic;
+            }
+            .name{
+                color: gray;
+                font-weight: 300;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-left: 80px;
+                padding-right: 40px;
+                margin-bottom: 10px;
+            }
+            a{
+                text-align: center;
+                padding: 10px 40px;
+                background-color:rgba(25, 25, 25, 0.85);
+                margin: auto;
+                color: $white;
+                border-radius: 50px;
+                font-size: 18px;
+                text-transform: capitalize;
+                margin-left: 60px;
+                margin-right: 40px;
+
+                &:hover{
+                    background-color: $dark-grey;
+                    cursor: pointer;
+                    color: $white;
+                }
+            }
+        }
 }
 }
 
@@ -131,9 +332,9 @@
   /* Fading animation */
     .fade {
         -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.8s;
+        -webkit-animation-duration: 1s;
         animation-name: fade;
-        animation-duration: 1.8s;
+        animation-duration: 1s;
     }
     
     @-webkit-keyframes fade {
