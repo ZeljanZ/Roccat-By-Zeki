@@ -763,7 +763,7 @@ section.products {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 25px;
+  padding: 35px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -1386,8 +1386,8 @@ section.products {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -45px;
-  padding: 35px;
+  margin-top: -39px;
+  padding: 25px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -1411,7 +1411,7 @@ section.products {
 /* The dots/bullets/indicators */
 .dot-three {
   position: relative;
-  top: -140px;
+  top: -160px;
   cursor: pointer;
   height: 3px;
   width: 70px;
@@ -1446,6 +1446,29 @@ section.products {
     opacity: .4; }
   to {
     opacity: 1; } }
+
+section.setup-proud {
+  background-color: white;
+  margin-top: -40px;
+  width: auto;
+  height: 100%; }
+  section.setup-proud h2 {
+    text-align: center;
+    color: #252525;
+    padding: 90px 20px 80px 20px;
+    font-size: 57px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1.5px; }
+  section.setup-proud p {
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 400;
+    color: #252525;
+    font-size: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px 50px 20px; }
 
 .search-wrapper {
   display: none;
