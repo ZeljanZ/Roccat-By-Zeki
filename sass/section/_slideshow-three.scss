@@ -46,6 +46,8 @@
             border-radius: 7%;
             top: 250px;
             left: 50%;
+            -webkit-box-shadow: 0 20px 35px 5px #0e0d0d;
+            box-shadow: 0 20px 35px 5px #0e0d0d;
             
             &::after{
                 content: " ";
@@ -135,6 +137,8 @@
             border-radius: 7%;
             top: 250px;
             left: 50%;
+            -webkit-box-shadow: 0 20px 35px 5px #0e0d0d;
+            box-shadow: 0 20px 35px 5px #0e0d0d;
             
             &::after{
                 content: " ";
@@ -225,6 +229,8 @@
             border-radius: 7%;
             top: 250px;
             left: 50%;
+            -webkit-box-shadow: 0 20px 35px 5px #0e0d0d;
+            box-shadow: 0 20px 35px 5px #0e0d0d;
             
             &::after{
                 content: " ";
@@ -280,6 +286,97 @@
             }
         }
 }
+
+    .slides-three-des-4{
+    height: 100vh;
+    position: relative;
+
+    h2{
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 60px;
+        position: absolute;
+        right: 34.5%;
+        top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    img{
+        height: 730px;
+        width: 882px;
+        padding-left: 160px;
+    }
+    .slide-three-caption{
+        background-color: $white;
+        width: 672px;
+        height: 310px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        line-height: 43px;
+        text-align: justify;
+        position: absolute;
+        border-radius: 7%;
+        top: 250px;
+        left: 50%;
+        -webkit-box-shadow: 0 20px 35px 5px #0e0d0d;
+        box-shadow: 0 20px 35px 5px #0e0d0d;
+        
+        &::after{
+            content: " ";
+            display: block;
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            border-top: 26px solid transparent;
+            border-right: 26px solid #ffffff;
+            border-left: none;
+            border-bottom: 26px solid transparent;
+        }
+
+        img{
+            margin-top: -40px;
+            margin-left: 30px;
+            max-height: 95px;
+            max-width: 85px;
+            padding-bottom: 10px;
+        }
+        .message{
+            margin-left: 50px;
+            font-size: 20px;
+            color: gray;
+            font-style: italic;
+        }
+        .name{
+            color: gray;
+            font-weight: 300;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 160px;
+            padding-right: 40px;
+            margin-bottom: 10px;
+        }
+        a{
+            text-align: center;
+            padding: 10px 60px;
+            background-color:rgba(25, 25, 25, 0.85);
+            margin: auto;
+            color: $white;
+            border-radius: 50px;
+            font-size: 18px;
+            text-transform: capitalize;
+            margin-left: 100px;
+            margin-right: 40px;
+
+            &:hover{
+                background-color: $dark-grey;
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+}
 }
 
   /* Next & previous buttons */
@@ -289,8 +386,8 @@
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: -39px;
-        padding: 25px;
+        margin-top: -45px;
+        padding: 35px;
         color: white;
         font-weight: bold;
         font-size: 18px;
@@ -311,9 +408,11 @@
     }  
   /* The dots/bullets/indicators */
     .dot-three{
+        position: relative;
+        top: -140px;
         cursor: pointer;
-        height: 2px;
-        width: 60px;
+        height: 3px;
+        width: 70px;
         border-radius: 20px;
         margin: 0px 2px;
         background-color: #bbb;
@@ -325,7 +424,7 @@
     
     .active, .dot-three:hover {
         background-color: $orange;
-        height: 7px;
+        height: 8px;
         border-radius: 20px;
     }
     
