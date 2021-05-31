@@ -8,7 +8,7 @@ section.setup-proud{
         text-align: center;
         color: $dark-grey;
         padding: 90px 20px 80px 20px;
-        font-size: 57px;
+        font-size: 77px;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: -1.5px;
@@ -23,6 +23,157 @@ section.setup-proud{
         max-width: 900px;
         margin: auto;
         padding: 0 20px 50px 20px;
+    }
+    .setup-proud-item{
+        width: 100%;
+        position: relative;
+
+        .row-list{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+
+            @media (max-width:$md) {
+                display: block;
+            }
+
+            .row-item-1{
+                flex-grow: 1;
+                position: relative;
+
+                img{
+                    display: block;
+                    height: 600px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                a{
+                    i{
+                        font-size: 30px;
+                        color: $black;
+                    }
+                }
+            }
+            // hover for item 1 -left slide
+            .item-left{
+                &:hover .imgage-overly{
+                    width: 100%;
+                }
+                .imgage-overly{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffffA3;
+                    overflow: hidden;
+                    width: 0;
+                    height: 100%;
+                    transition: .5s ease;
+                }
+                a{
+                    color: white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                    
+                }
+            }
+
+            .item-top{
+                
+                &:hover .imgage-overly{
+                    bottom: 0;
+                    height: 100%;
+                }
+                .imgage-overly{
+                    position: absolute;
+                    bottom: 100%;
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffffA3;
+                    overflow: hidden;
+                    width: 100%;
+                    height:0;
+                    transition: .5s ease;
+                }
+                a{
+                    color: white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                }
+            }
+
+            .item-right{
+
+                &:hover .imgage-overly{
+                    width: 100%;
+                    left: 0;
+                }
+                .imgage-overly{
+                    position: absolute;
+                    bottom: 0;
+                    left: 100%;
+                    right: 0;
+                    background-color: #ffffffA3;
+                    overflow: hidden;
+                    width: 0;
+                    height: 100%;
+                    transition: .5s ease;
+                }
+                a{
+                    color: white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                }
+            }
+            .item-bottom{
+
+                &:hover .imgage-overly{
+                    height: 100%;
+                    
+                }
+                .imgage-overly{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffffA3;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 0;
+                    transition: .5s ease;
+                }
+                a{
+                    color: white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                }
+            }
+        }
     }
 
 }
