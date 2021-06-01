@@ -14,17 +14,74 @@ jQuery(document).ready(function($){
         $(".search-wrapper").fadeOut();
     });
     
-    //proud wrapper
+    //proud wrapper item-1
+    $("#item-1").click(function(){
+
+        $(".proud-wrapper-item-1").fadeIn();
+    });
+
+    $(".close-proud").click(function(){
+
+        $(".proud-wrapper-item-1").fadeOut();   
+    });
+    //Proud wrapper end
+
+    //proud wrapper item-2
+    $("#item-2").click(function(){
+
+        $(".proud-wrapper-item-2").fadeIn();
+    });
+
+    $(".close-proud").click(function(){
+
+        $(".proud-wrapper-item-2").fadeOut();   
+    });
+    //Proud wrapper end
+
+    //proud wrapper item-3
+    $("#item-3").click(function(){
+
+        $(".proud-wrapper-item-3").fadeIn();
+    });
+
+    $(".close-proud").click(function(){
+
+        $(".proud-wrapper-item-3").fadeOut();   
+    });
+    //Proud wrapper end
+    //proud wrapper item-4
+    $("#item-4").click(function(){
+
+        $(".proud-wrapper-item-4").fadeIn();
+    });
+
+    $(".close-proud").click(function(){
+
+        $(".proud-wrapper-item-4").fadeOut();   
+    });
+    //Proud wrapper end
+    //proud wrapper item-1
+    $("#item-5").click(function(){
+
+        $(".proud-wrapper-item-5").fadeIn();
+    });
+
+    $(".close-proud").click(function(){
+
+        $(".proud-wrapper-item-5").fadeOut();   
+    });
+    //Proud wrapper end
+    //proud wrapper item-6
     $("#item-6").click(function(){
 
-        $(".proud-wrapper").fadeIn();
+        $(".proud-wrapper-item-6").fadeIn();
     });
 
-    $("#close-proud").click(function(){
+    $(".close-proud").click(function(){
 
-        $(".proud-wrapper").fadeOut();
+        $(".proud-wrapper-item-6").fadeOut();   
     });
-
+    //Proud wrapper end
 
     //hamburger-menu
     $("#hamburger-btn").click(function(){

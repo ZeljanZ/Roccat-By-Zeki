@@ -1690,22 +1690,127 @@ section.setup-proud {
     top: 24px;
     height: 32px; } }
 
-.proud-wrapper {
+.proud-item {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 3;
-  text-align: center;
-  padding: 150px; }
-  .proud-wrapper a {
+  text-align: center; }
+  .proud-item .proud-holder {
+    width: 1300px;
+    height: 700px;
+    margin: 5% auto;
+    position: relative;
+    background-color: white; }
+    .proud-item .proud-holder img {
+      position: absolute;
+      right: 50%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      width: 60%; }
+  .proud-item .proud-text {
+    color: black;
     position: absolute;
-    top: 150px;
-    right: 300px;
+    top: 50px;
+    left: 57%;
+    width: auto;
+    padding: 20px; }
+    .proud-item .proud-text .left-side {
+      float: left; }
+      .proud-item .proud-text .left-side ul {
+        list-style: none; }
+        .proud-item .proud-text .left-side ul li {
+          display: inline-block; }
+          .proud-item .proud-text .left-side ul li:first-child {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 13px;
+            border-radius: 100%;
+            margin-right: 10px; }
+    .proud-item .proud-text .right-side {
+      float: right;
+      color: #848484;
+      font-weight: 500;
+      font-size: 15px; }
+    .proud-item .proud-text p {
+      padding-top: 70px;
+      text-align: justify;
+      font-size: 15px; }
+    .proud-item .proud-text .caption {
+      float: left;
+      margin-top: 30px; }
+      .proud-item .proud-text .caption details summary {
+        font-size: 14px;
+        font-weight: 500;
+        float: left;
+        color: #848484; }
+      .proud-item .proud-text .caption details span {
+        font-size: 15px;
+        float: left;
+        margin-top: 30px;
+        text-align: justify;
+        margin-left: -100px; }
+      .proud-item .proud-text .caption .icone-holder {
+        margin-left: 16px; }
+        .proud-item .proud-text .caption .icone-holder .fas {
+          color: #848484;
+          float: left;
+          margin-top: 30px;
+          margin-right: 35px;
+          position: relative; }
+        .proud-item .proud-text .caption .icone-holder .fa-thumbs-up::after {
+          content: "4";
+          display: block;
+          position: absolute;
+          left: -15px;
+          top: 10%; }
+        .proud-item .proud-text .caption .icone-holder .fa-thumbs-down {
+          margin-top: 33px; }
+          .proud-item .proud-text .caption .icone-holder .fa-thumbs-down::after {
+            content: "0";
+            display: block;
+            position: absolute;
+            left: -15px;
+            top: -8%; }
+  .proud-item a {
+    position: absolute;
+    top: 50px;
+    right: 200px;
     color: white;
     font-size: 30px; }
-    .proud-wrapper a :hover {
+    .proud-item a :hover {
       color: blue; }
+
+.proud-follow {
+  height: 150px;
+  width: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px; }
+  .proud-follow .follow-btn a {
+    background-color: #252525;
+    text-align: center;
+    padding: 15px 60px;
+    color: #848484;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize; }
+    .proud-follow .follow-btn a:hover {
+      background-color: #848484;
+      cursor: pointer;
+      color: white; }
+    .proud-follow .follow-btn a span {
+      margin-left: 10px; }

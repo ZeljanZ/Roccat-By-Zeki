@@ -1,19 +1,129 @@
-.proud-wrapper{
+.proud-item{
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 3;
     text-align: center;
-    padding: 150px;
+
+    .proud-holder{
+        width: 1300px;
+        height:700px;
+        margin: 5% auto;
+        position: relative;
+        background-color: $white;
+        img{
+            position: absolute;
+            right: 50%;
+            object-fit: cover;
+            height: 100%;
+            width: 60%;
+        }
+    }
+    .proud-text{
+        color: $black;
+        position:absolute;
+        top: 50px;
+        left: 57%;
+        width: auto;
+        padding: 20px;
+
+        .left-side{
+            float: left;
+            ul{
+                list-style: none;
+                
+                li{
+                    display: inline-block;
+
+                    &:first-child{
+                        font-size: 15px;
+                        font-weight: bold;
+                        background-color: $black;
+                        color: $white;
+                        padding: 13px;
+                        border-radius: 100%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .right-side{
+            float: right;
+            color: $gray;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        p{
+            padding-top: 70px;
+            text-align: justify;
+            font-size: 15px;
+        }
+        .caption{
+            float: left;
+            margin-top: 30px;
+            details{
+                
+                summary{
+                    font-size: 14px;
+                    font-weight: 500;
+                    float: left;
+                    color: $gray;
+                }
+            
+                span{
+                    font-size: 15px;
+                    float: left;
+                    margin-top: 30px;
+                    text-align: justify;
+                    margin-left: -100px;
+                }
+            }
+            .icone-holder{
+                margin-left: 16px;
+
+                .fas{
+                    color: $gray;
+                    float: left;
+                    margin-top: 30px;
+                    margin-right: 35px;
+                    position: relative;
+                }
+                .fa-thumbs-up{
+                    &::after{
+                        content: "4";
+                        display: block;
+                        position: absolute;
+                        left: -15px;
+                        top: 10%;
+                        
+                    }
+                    
+                }
+                .fa-thumbs-down{
+                    margin-top: 33px;
+                    &::after{
+                        content: "0";
+                        display: block;
+                        position: absolute;
+                        left: -15px;
+                        top: -8%;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
 
     a{
         position: absolute;
-        top: 150px;
-        right: 300px;
+        top: 50px;
+        right: 200px;
         color: $white;
         font-size: 30px;
 
@@ -21,6 +131,37 @@
             color: $blue;
         }
     }
+}
+.proud-follow{
+    height: 150px;
+    width: auto;
+    background-color: $white;
+    display: flex ;
+    justify-content: center;
+    padding-top: 100px;
 
-    
+    .follow-btn{
+
+        a{
+            background-color: $dark-grey;
+            text-align: center;
+            padding: 15px 60px;
+            color: $gray;
+            border-radius: 50px;
+            color: $white;
+            font-size: 18px;
+            text-transform: capitalize;
+
+                &:hover{
+                    background-color: $gray;
+                    cursor: pointer;
+                    color: $white;
+                }
+                
+            
+                span{
+                    margin-left: 10px;
+                }
+        }
+    }
 }
