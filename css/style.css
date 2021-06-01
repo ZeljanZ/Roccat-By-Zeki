@@ -386,237 +386,6 @@ section.products {
             section.products .container .products-item .overlay a {
               margin-left: 295px; } }
 
-.products-hero {
-  background-image: url("../img/keyboards-hero.jpg");
-  min-height: 480px;
-  background-size: cover;
-  margin-top: 50px;
-  position: relative; }
-  .products-hero-info {
-    position: absolute;
-    top: 150px;
-    left: 90px; }
-    .products-hero-info span {
-      background-color: blue;
-      padding: 10px 20px;
-      color: white;
-      margin-bottom: 25px; }
-    .products-hero-info p {
-      font-size: 28px;
-      color: white;
-      text-transform: uppercase;
-      padding-top: 20px; }
-    .products-hero-info h2 {
-      font-size: 60px;
-      color: white;
-      font-weight: 400;
-      text-transform: uppercase;
-      margin-bottom: 40px; }
-    .products-hero-info a {
-      color: black;
-      background-color: rgba(242, 242, 242, 0.85);
-      padding: 15px 60px;
-      border: 1px solid #2C2A34;
-      border-radius: 50px;
-      font-weight: 500;
-      font-size: 20px;
-      letter-spacing: 0.5px; }
-      .products-hero-info a:hover {
-        background-color: white;
-        cursor: pointer; }
-
-.products-list h1 {
-  font-size: 77px;
-  text-align: center;
-  letter-spacing: 4px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-top: 70px;
-  margin-bottom: 20px; }
-
-.products-list .products-description {
-  text-align: center;
-  color: #848484;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  padding-bottom: 50px; }
-
-.products-list .products-filter {
-  color: white;
-  text-align: center;
-  padding-bottom: 50px; }
-  .products-list .products-filter li {
-    display: inline-block;
-    list-style: none;
-    background-color: #252525;
-    color: #8e8e8e;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .products-list .products-filter li.active {
-      background-color: #f2f2f2;
-      color: #1c1c1c;
-      padding-bottom: 20px; }
-    .products-list .products-filter li:hover {
-      color: #f2f2f2;
-      background-color: #333; }
-
-.products-list .products-wrapper {
-  margin: 0 auto; }
-  .products-list .products-wrapper .pruduct-col {
-    margin: 20px auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .products-list .products-wrapper .pruduct-col .products-shop-item {
-      background: transparent radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0 no-repeat padding-box;
-      border-radius: 10px;
-      height: 750px;
-      width: auto;
-      border: 2px solid transparent;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out;
-      position: relative;
-      -webkit-transition: 0.4s;
-      transition: 0.4s;
-      margin-top: 40px; }
-      .products-list .products-wrapper .pruduct-col .products-shop-item:hover {
-        border: 2px solid #8e8e8e;
-        cursor: pointer; }
-        .products-list .products-wrapper .pruduct-col .products-shop-item:hover img {
-          position: relative;
-          top: -20px; }
-      .products-list .products-wrapper .pruduct-col .products-shop-item img {
-        padding: 20px;
-        max-width: 380px;
-        display: block;
-        margin: auto; }
-      .products-list .products-wrapper .pruduct-col .products-shop-item .product-shop-desc {
-        padding-left: 25px;
-        padding-right: 25px;
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1; }
-        .products-list .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h3 {
-          color: white;
-          font-size: 20px;
-          font-weight: 400;
-          letter-spacing: 1px; }
-        .products-list .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p {
-          color: white;
-          font-size: 20px;
-          font-weight: 400;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          letter-spacing: 1px; }
-          .products-list .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p del {
-            color: #f97000;
-            margin-left: 5px;
-            font-size: 18px; }
-        .products-list .products-wrapper .pruduct-col .products-shop-item .product-shop-desc ul {
-          padding-left: 15px;
-          padding-bottom: 20px;
-          color: #8e8e8e;
-          margin-bottom: 30px;
-          font-size: 18px; }
-      .products-list .products-wrapper .pruduct-col .products-shop-item a {
-        position: absolute;
-        bottom: 25px;
-        margin-left: 30px;
-        text-align: center;
-        padding: 15px 120px;
-        background-color: rgba(242, 242, 242, 0.85);
-        color: #252525;
-        border-radius: 50px;
-        color: gray;
-        font-size: 18px;
-        text-transform: uppercase; }
-        .products-list .products-wrapper .pruduct-col .products-shop-item a:hover {
-          background-color: white;
-          cursor: pointer;
-          color: #252525; }
-
-.product-inner-wrapper {
-  padding-top: 100px; }
-  .product-inner-wrapper h1 {
-    font-weight: 300;
-    font-size: 54px;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    letter-spacing: 8px; }
-  .product-inner-wrapper p {
-    text-align: center;
-    color: #8e8e8e;
-    font-weight: 300;
-    font-size: 16px;
-    max-width: 1000px;
-    margin: auto; }
-  .product-inner-wrapper .left-right-products {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 100px; }
-    @media (max-width: 767px) {
-      .product-inner-wrapper .left-right-products {
-        display: block; } }
-    @media (max-width: 575px) {
-      .product-inner-wrapper .left-right-products {
-        display: block; } }
-    .product-inner-wrapper .left-right-products .side-product-desc {
-      width: 50%; }
-      .product-inner-wrapper .left-right-products .side-product-desc h3 {
-        padding-top: 220px;
-        padding-left: 100px;
-        color: white;
-        font-weight: 400;
-        font-size: 36px;
-        padding-bottom: 10px; }
-      .product-inner-wrapper .left-right-products .side-product-desc p {
-        padding-top: 30px;
-        text-align: left;
-        padding-left: 100px;
-        padding-right: 100px;
-        font-size: 18px;
-        line-height: 1.6; }
-        .product-inner-wrapper .left-right-products .side-product-desc p span {
-          color: #f97000;
-          cursor: pointer; }
-      .product-inner-wrapper .left-right-products .side-product-desc ul p {
-        text-align: left;
-        padding-left: 100px;
-        color: white;
-        font-weight: 400; }
-      .product-inner-wrapper .left-right-products .side-product-desc ul li {
-        padding-left: 100px;
-        list-style: none;
-        color: #8e8e8e;
-        line-height: 1.6; }
-        .product-inner-wrapper .left-right-products .side-product-desc ul li span {
-          color: #f97000; }
-    .product-inner-wrapper .left-right-products .side-product-image {
-      width: 50%; }
-      .product-inner-wrapper .left-right-products .side-product-image img {
-        width: 100%;
-        height: 100%; }
-    .product-inner-wrapper .left-right-products .side-product-desc {
-      background-color: #151515; }
-
 /* Slideshow container */
 .slideshow-container {
   width: auto;
@@ -1589,6 +1358,237 @@ section.setup-proud {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         white-space: nowrap; }
+
+.products-hero-keyboards {
+  background-image: url("../img/keyboards-hero.jpg");
+  min-height: 480px;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative; }
+  .products-hero-keyboards-info {
+    position: absolute;
+    top: 150px;
+    left: 90px; }
+    .products-hero-keyboards-info span {
+      background-color: blue;
+      padding: 10px 20px;
+      color: white;
+      margin-bottom: 25px; }
+    .products-hero-keyboards-info p {
+      font-size: 28px;
+      color: white;
+      text-transform: uppercase;
+      padding-top: 20px; }
+    .products-hero-keyboards-info h2 {
+      font-size: 60px;
+      color: white;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 40px; }
+    .products-hero-keyboards-info a {
+      color: black;
+      background-color: rgba(242, 242, 242, 0.85);
+      padding: 15px 60px;
+      border: 1px solid #2C2A34;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.5px; }
+      .products-hero-keyboards-info a:hover {
+        background-color: white;
+        cursor: pointer; }
+
+.products-list-keyboards h1 {
+  font-size: 77px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 70px;
+  margin-bottom: 20px; }
+
+.products-list-keyboards .products-description {
+  text-align: center;
+  color: #848484;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding-bottom: 50px; }
+
+.products-list-keyboards .products-filter {
+  color: white;
+  text-align: center;
+  padding-bottom: 50px; }
+  .products-list-keyboards .products-filter li {
+    display: inline-block;
+    list-style: none;
+    background-color: #252525;
+    color: #8e8e8e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .products-list-keyboards .products-filter li.active {
+      background-color: #f2f2f2;
+      color: #1c1c1c;
+      padding-bottom: 20px; }
+    .products-list-keyboards .products-filter li:hover {
+      color: #f2f2f2;
+      background-color: #333; }
+
+.products-list-keyboards .products-wrapper {
+  margin: 0 auto; }
+  .products-list-keyboards .products-wrapper .pruduct-col {
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
+      background: transparent radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0 no-repeat padding-box;
+      border-radius: 10px;
+      height: 750px;
+      width: auto;
+      border: 2px solid transparent;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      position: relative;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      margin-top: 40px; }
+      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover {
+        border: 2px solid #8e8e8e;
+        cursor: pointer; }
+        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover img {
+          position: relative;
+          top: -20px; }
+      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
+        padding: 20px;
+        max-width: 380px;
+        display: block;
+        margin: auto; }
+      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc {
+        padding-left: 25px;
+        padding-right: 25px;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h3 {
+          color: white;
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 1px; }
+        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p {
+          color: white;
+          font-size: 20px;
+          font-weight: 400;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          letter-spacing: 1px; }
+          .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p del {
+            color: #f97000;
+            margin-left: 5px;
+            font-size: 18px; }
+        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc ul {
+          padding-left: 15px;
+          padding-bottom: 20px;
+          color: #8e8e8e;
+          margin-bottom: 30px;
+          font-size: 18px; }
+      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
+        position: absolute;
+        bottom: 25px;
+        margin-left: 30px;
+        text-align: center;
+        padding: 15px 120px;
+        background-color: rgba(242, 242, 242, 0.85);
+        color: #252525;
+        border-radius: 50px;
+        color: gray;
+        font-size: 18px;
+        text-transform: uppercase; }
+        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a:hover {
+          background-color: white;
+          cursor: pointer;
+          color: #252525; }
+
+.product-inner-wrapper-keyboards {
+  padding-top: 100px; }
+  .product-inner-wrapper-keyboards h1 {
+    font-weight: 300;
+    font-size: 54px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    letter-spacing: 8px; }
+  .product-inner-wrapper-keyboards p {
+    text-align: center;
+    color: #8e8e8e;
+    font-weight: 300;
+    font-size: 16px;
+    max-width: 1000px;
+    margin: auto; }
+  .product-inner-wrapper-keyboards .left-right-products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 100px; }
+    @media (max-width: 767px) {
+      .product-inner-wrapper-keyboards .left-right-products {
+        display: block; } }
+    @media (max-width: 575px) {
+      .product-inner-wrapper-keyboards .left-right-products {
+        display: block; } }
+    .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
+      width: 50%; }
+      .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
+        padding-top: 220px;
+        padding-left: 100px;
+        color: white;
+        font-weight: 400;
+        font-size: 36px;
+        padding-bottom: 10px; }
+      .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+        padding-top: 30px;
+        text-align: left;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 18px;
+        line-height: 1.6; }
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc p span {
+          color: #f97000;
+          cursor: pointer; }
+      .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
+        text-align: left;
+        padding-left: 100px;
+        color: white;
+        font-weight: 400; }
+      .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li {
+        padding-left: 100px;
+        list-style: none;
+        color: #8e8e8e;
+        line-height: 1.6; }
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li span {
+          color: #f97000; }
+    .product-inner-wrapper-keyboards .left-right-products .side-product-image {
+      width: 50%; }
+      .product-inner-wrapper-keyboards .left-right-products .side-product-image img {
+        width: 100%;
+        height: 100%; }
+    .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
+      background-color: #151515; }
 
 .search-wrapper {
   display: none;
