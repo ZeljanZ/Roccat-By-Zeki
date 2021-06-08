@@ -1,0 +1,109 @@
+section.product-single-keyboards{
+    color: white;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+    
+
+
+    .product-single{
+        display: flex;
+        flex-direction:row;
+        
+        
+        
+
+        .product-single-images{
+            max-height: 900px;
+            display: grid;
+            grid-template:  "a a"
+                            "b c"
+                            "d d"
+                            "e f";
+            max-width:57%;
+            
+            
+            #img-1{
+                grid-area: a;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            #img-2{
+                grid-area: b;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            #img-3{
+                grid-area: c;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            #img-4{
+                grid-area: d;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            #img-5{
+                grid-area: e;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            #img-6{
+                grid-area: f;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .product-img{
+                display: grid;
+                grid-template: "region";
+                align-content: stretch;
+                justify-content: stretch;
+                background-color: antiquewhite;
+            }
+
+        }
+        .product-single-description{
+            // position: fixed;
+            margin-top: 50px;
+            margin-left: 80px;
+            h5{
+                font-size: 16px;
+                font-weight: 300;
+                color: gray;
+            }
+            h1{
+                font-size: 30px;
+                line-height: 36px;
+                margin: 0 0 8px 0;
+                font-weight: 400;
+            }
+
+            ul{
+                padding: 20px 35px 20px 20px;
+                line-height: 27px;
+                li{
+                    font-size: 16px;
+                    text-align: left;
+                    
+                }
+            }
+
+            .product-form{
+                margin-top: 20px;
+            }
+        }
+    }
+}

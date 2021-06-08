@@ -16,6 +16,10 @@ body {
 .dole {
   height: 500px; }
 
+.clearfix {
+  overflow: auto;
+  clear: both; }
+
 header {
   background-color: black; }
   header .pre-header {
@@ -1524,9 +1528,9 @@ section.setup-proud {
 
 .product-inner-wrapper-keyboards {
   padding-top: 100px; }
-  .product-inner-wrapper-keyboards h1 {
+  .product-inner-wrapper-keyboards h2 {
     font-weight: 300;
-    font-size: 54px;
+    font-size: 55px;
     text-align: center;
     color: white;
     padding: 20px;
@@ -1589,6 +1593,86 @@ section.setup-proud {
         height: 100%; }
     .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
       background-color: #151515; }
+
+section.product-single-keyboards {
+  color: white;
+  margin-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 1000px; }
+  section.product-single-keyboards .product-single {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    section.product-single-keyboards .product-single .product-single-images {
+      max-height: 900px;
+      display: -ms-grid;
+      display: grid;
+      grid-template: "a a" "b c" "d d" "e f";
+      max-width: 57%; }
+      section.product-single-keyboards .product-single .product-single-images #img-1 {
+        grid-area: a; }
+        section.product-single-keyboards .product-single .product-single-images #img-1 img {
+          height: 100%;
+          width: 100%; }
+      section.product-single-keyboards .product-single .product-single-images #img-2 {
+        grid-area: b; }
+        section.product-single-keyboards .product-single .product-single-images #img-2 img {
+          height: 100%;
+          width: 100%; }
+      section.product-single-keyboards .product-single .product-single-images #img-3 {
+        grid-area: c; }
+        section.product-single-keyboards .product-single .product-single-images #img-3 img {
+          height: 100%;
+          width: 100%; }
+      section.product-single-keyboards .product-single .product-single-images #img-4 {
+        grid-area: d; }
+        section.product-single-keyboards .product-single .product-single-images #img-4 img {
+          height: 100%;
+          width: 100%; }
+      section.product-single-keyboards .product-single .product-single-images #img-5 {
+        grid-area: e; }
+        section.product-single-keyboards .product-single .product-single-images #img-5 img {
+          height: 100%;
+          width: 100%; }
+      section.product-single-keyboards .product-single .product-single-images #img-6 {
+        grid-area: f; }
+        section.product-single-keyboards .product-single .product-single-images #img-6 img {
+          height: 100%;
+          width: 100%; }
+      section.product-single-keyboards .product-single .product-single-images .product-img {
+        display: -ms-grid;
+        display: grid;
+        grid-template: "region";
+        -ms-flex-line-pack: stretch;
+            align-content: stretch;
+        -webkit-box-pack: stretch;
+            -ms-flex-pack: stretch;
+                justify-content: stretch;
+        background-color: antiquewhite; }
+    section.product-single-keyboards .product-single .product-single-description {
+      margin-top: 50px;
+      margin-left: 80px; }
+      section.product-single-keyboards .product-single .product-single-description h5 {
+        font-size: 16px;
+        font-weight: 300;
+        color: gray; }
+      section.product-single-keyboards .product-single .product-single-description h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 0 0 8px 0;
+        font-weight: 400; }
+      section.product-single-keyboards .product-single .product-single-description ul {
+        padding: 20px 35px 20px 20px;
+        line-height: 27px; }
+        section.product-single-keyboards .product-single .product-single-description ul li {
+          font-size: 16px;
+          text-align: left; }
+      section.product-single-keyboards .product-single .product-single-description .product-form {
+        margin-top: 20px; }
 
 .search-wrapper {
   display: none;
