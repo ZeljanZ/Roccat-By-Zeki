@@ -1597,8 +1597,7 @@ section.setup-proud {
 section.product-single-keyboards {
   color: white;
   margin-top: 20px;
-  margin: 0 auto;
-  margin-bottom: 1000px; }
+  margin: 0 auto; }
   section.product-single-keyboards .product-single {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1608,11 +1607,14 @@ section.product-single-keyboards {
         -ms-flex-direction: row;
             flex-direction: row; }
     section.product-single-keyboards .product-single .product-single-images {
-      max-height: 900px;
+      max-height: 850px;
       display: -ms-grid;
       display: grid;
       grid-template: "a a" "b c" "d d" "e f";
-      max-width: 57%; }
+      max-width: 57%;
+      overflow: auto; }
+      section.product-single-keyboards .product-single .product-single-images::-webkit-scrollbar {
+        visibility: hidden; }
       section.product-single-keyboards .product-single .product-single-images #img-1 {
         grid-area: a; }
         section.product-single-keyboards .product-single .product-single-images #img-1 img {
@@ -1673,6 +1675,33 @@ section.product-single-keyboards {
           text-align: left; }
       section.product-single-keyboards .product-single .product-single-description .product-form {
         margin-top: 20px; }
+        section.product-single-keyboards .product-single .product-single-description .product-form p {
+          font-size: 24px;
+          margin-bottom: 35px; }
+          section.product-single-keyboards .product-single .product-single-description .product-form p del {
+            color: red; }
+        section.product-single-keyboards .product-single .product-single-description .product-form .btn-add, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
+          height: 53px;
+          width: 667px;
+          margin: 0px 30px 10px 0;
+          display: block;
+          padding: 12px 5px 13px 5px;
+          min-height: 44px;
+          border-radius: 50px;
+          border: none;
+          background-color: #d91c3c;
+          color: white;
+          font-size: 20px;
+          text-align: center; }
+          section.product-single-keyboards .product-single .product-single-description .product-form .btn-add:hover, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy:hover {
+            background-color: #e7415d;
+            cursor: pointer; }
+        section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
+          color: black;
+          background-color: white; }
+          section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy:hover {
+            background-color: #b3b3b3;
+            cursor: pointer; }
 
 .search-wrapper {
   display: none;

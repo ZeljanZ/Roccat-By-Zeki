@@ -1,8 +1,7 @@
 section.product-single-keyboards{
-    color: white;
+    color: $white;
     margin-top: 20px;
     margin: 0 auto;
-    margin-bottom: 1000px;
     
 
 
@@ -14,14 +13,18 @@ section.product-single-keyboards{
         
 
         .product-single-images{
-            max-height: 900px;
+            max-height: 850px;
             display: grid;
             grid-template:  "a a"
                             "b c"
                             "d d"
                             "e f";
             max-width:57%;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                visibility: hidden;
             
+            }
             
             #img-1{
                 grid-area: a;
@@ -103,6 +106,47 @@ section.product-single-keyboards{
 
             .product-form{
                 margin-top: 20px;
+
+
+                p{
+                    font-size: 24px;
+                    margin-bottom: 35px;
+
+                    del{
+                        
+                        color: red;
+                    }
+                }
+                .btn-add{
+                    height: 53px;
+                    width: 667px;
+                    margin: 0px 30px 10px 0;
+                    display: block;
+                    padding: 12px 5px 13px 5px;
+                    min-height: 44px;
+                    border-radius: 50px;
+                    border: none;
+                    background-color: $red-cart;
+                    color: $white;
+                    font-size: 20px;
+                    text-align: center;
+                    
+                    &:hover{
+                        background-color: lighten($color: $red-cart, $amount: 10);
+                        cursor: pointer;
+                    }
+                }
+                .btn-buy{
+                    @extend .btn-add;
+
+                    color: $black;
+                    background-color: $white;
+
+                    &:hover{
+                        background-color: lighten($color: $black, $amount: 70);
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
