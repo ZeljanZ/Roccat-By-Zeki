@@ -70,9 +70,9 @@
             &:hover{
                 border: 2px solid $filter-grey;
                 cursor: pointer;
+                transition: transform .7s;
                 img{
-                    position: relative;
-                    top: -20px;
+                    transform: scale(1.08);
                 }
             }
             

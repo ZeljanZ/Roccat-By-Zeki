@@ -151,3 +151,80 @@ section.product-single-keyboards{
         }
     }
 }
+section.product-specification{
+    background-color: white;
+
+    .product-accordion{
+        margin: 0 18%;
+        background-color: white;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 400;
+            color: $dark-grey;
+            padding-bottom: 50px;
+        }
+        .accordion{
+            background-color: $filter-active-bg;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            height: 50px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 22px;
+            font-weight: 500;
+            transition: 0.4s;
+            margin-bottom: 10px;
+        }
+        
+            .active, .accordion:hover {
+                background-color: lighten($color: #000000, $amount:20);
+                color: $white;
+            }
+            .active{
+                border-radius: 0%;
+                background-color: $black;
+                color: $white;
+                padding-bottom: 10px;
+            }
+            .accordion:after {
+                content: '\002B';
+                color: $black;
+                font-weight: bold;
+                font-size: 30px;
+                float: right;
+            }
+            
+            .active:after {
+                content: "\2212";
+                color: $white;
+            }
+
+            .panel {
+                line-height: 25px;
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                margin-bottom: 10px;
+                ul{
+                    list-style-type: square;
+                    list-style-position: inside;
+                    li{
+                        font-size: 20px;
+                        line-height: 25px; 
+                        
+                    }
+                }
+            }
+        }
+    
+}
