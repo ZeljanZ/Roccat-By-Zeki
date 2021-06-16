@@ -1767,7 +1767,8 @@ section.product-specification {
         list-style-position: inside; }
         section.product-specification .product-accordion .panel ul li {
           font-size: 20px;
-          line-height: 25px; }
+          line-height: 25px;
+          font-weight: 400; }
 
 .search-wrapper {
   display: none;
