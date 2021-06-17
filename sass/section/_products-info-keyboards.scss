@@ -1,0 +1,124 @@
+section.products-info-keyboards{
+    width: 100%;
+    margin-top: 70px;
+
+    .products-info-wrapper{
+        width: 100%;
+        padding: 0px 0 100px 0;
+        
+
+        .products-optical-keyboards{
+            display: flex;
+            background-color: #f9fAfb;
+            height: 600px;
+            .optical-desc-holder{
+                padding: 100px 0 100px 100px;
+                background-color: #f9fAfb;
+                h4{
+                    font-size: 18px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                h2{
+                    max-width: 950px;
+                    text-transform: uppercase;
+                    font-size: 64px;
+                    text-align: left;
+                    font-weight: 400;
+                } 
+                p{
+                    margin-top: 20px;
+                    max-width: 670px;
+                    font-size: 16px;
+                    text-align: left;
+                    line-height: 25px;
+                    padding-right: 20px;
+                }
+                a{
+                    background-color: #dfff08;
+                    padding: 10px 40px 10px 50px;
+                    display: inline-block;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $black;
+                    i{
+                        padding-left: 15px;
+                    }
+                }
+            }
+            .optical-image-holder{
+                padding-right: 70px;
+                padding-top: 80px;
+                img{
+                    width: 850px;
+                    height:450px;
+                    
+                }
+            }
+        }
+    }
+    .products-special-keyboards{
+        background-color: $black;
+        h2{
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding-top: 100px;
+            padding-left: 50px;
+            font-size: 36px;
+        }
+        .special-holder{
+            display: flex;
+            padding-bottom: 60px;
+
+            .col-one{
+                flex-grow: 1;
+                padding: 20px 50px;
+                max-width: 900px;
+                h3{
+                    color: $white;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                p{
+                    color: $filter-grey;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding: 5px 10px 20px 0;
+                    a{
+                        color: lighten($color: $filter-grey, $amount: 30);
+                        font-weight: 500;
+                    }
+                }
+            }
+            .col-two{
+                flex-grow: 1;
+                padding: 20px 30px;
+                max-width: 900px;
+                h3{
+                    color: $white;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                p{
+                    text-align: left;
+                    padding: 5px 10px 20px 0;
+                    color: $filter-grey;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    a{
+                        color: lighten($color: $filter-grey, $amount: 30);
+                        font-weight: 500;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

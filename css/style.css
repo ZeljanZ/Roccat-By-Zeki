@@ -1402,7 +1402,7 @@ section.setup-proud {
         background-color: white;
         cursor: pointer; }
 
-.products-list-keyboards h1 {
+section.products-list-keyboards h1 {
   font-size: 77px;
   text-align: center;
   letter-spacing: 4px;
@@ -1412,18 +1412,18 @@ section.setup-proud {
   margin-top: 70px;
   margin-bottom: 20px; }
 
-.products-list-keyboards .products-description {
+section.products-list-keyboards .products-description {
   text-align: center;
   color: #848484;
   font-size: 16px;
   letter-spacing: 0.5px;
   padding-bottom: 50px; }
 
-.products-list-keyboards .products-filter {
+section.products-list-keyboards .products-filter {
   color: white;
   text-align: center;
   padding-bottom: 50px; }
-  .products-list-keyboards .products-filter li {
+  section.products-list-keyboards .products-filter li {
     display: inline-block;
     list-style: none;
     background-color: #252525;
@@ -1434,17 +1434,17 @@ section.setup-proud {
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .products-list-keyboards .products-filter li.active {
+    section.products-list-keyboards .products-filter li.active {
       background-color: #f2f2f2;
       color: #1c1c1c;
       padding-bottom: 20px; }
-    .products-list-keyboards .products-filter li:hover {
+    section.products-list-keyboards .products-filter li:hover {
       color: #f2f2f2;
       background-color: #333; }
 
-.products-list-keyboards .products-wrapper {
+section.products-list-keyboards .products-wrapper {
   margin: 0 auto; }
-  .products-list-keyboards .products-wrapper .pruduct-col {
+  section.products-list-keyboards .products-wrapper .pruduct-col {
     margin: 20px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1458,7 +1458,7 @@ section.setup-proud {
             justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
+    section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
       background: transparent radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0 no-repeat padding-box;
       border-radius: 10px;
       height: 750px;
@@ -1470,50 +1470,50 @@ section.setup-proud {
       -webkit-transition: 0.4s;
       transition: 0.4s;
       margin-top: 40px; }
-      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover {
+      section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover {
         border: 2px solid #8e8e8e;
         cursor: pointer;
         -webkit-transition: -webkit-transform .7s;
         transition: -webkit-transform .7s;
         transition: transform .7s;
         transition: transform .7s, -webkit-transform .7s; }
-        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover img {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover img {
           -webkit-transform: scale(1.08);
                   transform: scale(1.08); }
-      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
+      section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
         padding: 20px;
         max-width: 380px;
         display: block;
         margin: auto; }
-      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc {
+      section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc {
         padding-left: 25px;
         padding-right: 25px;
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
-        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h3 {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h3 {
           color: white;
           font-size: 20px;
           font-weight: 400;
           letter-spacing: 1px; }
-        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p {
           color: white;
           font-size: 20px;
           font-weight: 400;
           padding-top: 10px;
           padding-bottom: 10px;
           letter-spacing: 1px; }
-          .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p del {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p del {
             color: #f97000;
             margin-left: 5px;
             font-size: 18px; }
-        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc ul {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc ul {
           padding-left: 15px;
           padding-bottom: 20px;
           color: #8e8e8e;
           margin-bottom: 30px;
           font-size: 18px; }
-      .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
+      section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
         position: absolute;
         bottom: 25px;
         margin-left: 30px;
@@ -1525,7 +1525,7 @@ section.setup-proud {
         color: gray;
         font-size: 18px;
         text-transform: uppercase; }
-        .products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a:hover {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a:hover {
           background-color: white;
           cursor: pointer;
           color: #252525; }
@@ -1769,6 +1769,111 @@ section.product-specification {
           font-size: 20px;
           line-height: 25px;
           font-weight: 400; }
+
+section.products-info-keyboards {
+  width: 100%;
+  margin-top: 70px; }
+  section.products-info-keyboards .products-info-wrapper {
+    width: 100%;
+    padding: 0px 0 100px 0; }
+    section.products-info-keyboards .products-info-wrapper .products-optical-keyboards {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: #f9fAfb;
+      height: 600px; }
+      section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder {
+        padding: 100px 0 100px 100px;
+        background-color: #f9fAfb; }
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h4 {
+          font-size: 18px;
+          text-align: left;
+          text-transform: uppercase;
+          font-weight: 400; }
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h2 {
+          max-width: 950px;
+          text-transform: uppercase;
+          font-size: 64px;
+          text-align: left;
+          font-weight: 400; }
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p {
+          margin-top: 20px;
+          max-width: 670px;
+          font-size: 16px;
+          text-align: left;
+          line-height: 25px;
+          padding-right: 20px; }
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder a {
+          background-color: #dfff08;
+          padding: 10px 40px 10px 50px;
+          display: inline-block;
+          margin-top: 20px;
+          border-radius: 20px;
+          font-weight: 500;
+          font-size: 16px;
+          color: black; }
+          section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder a i {
+            padding-left: 15px; }
+      section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder {
+        padding-right: 70px;
+        padding-top: 80px; }
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder img {
+          width: 850px;
+          height: 450px; }
+  section.products-info-keyboards .products-special-keyboards {
+    background-color: black; }
+    section.products-info-keyboards .products-special-keyboards h2 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding-top: 100px;
+      padding-left: 50px;
+      font-size: 36px; }
+    section.products-info-keyboards .products-special-keyboards .special-holder {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 60px; }
+      section.products-info-keyboards .products-special-keyboards .special-holder .col-one {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        padding: 20px 50px;
+        max-width: 900px; }
+        section.products-info-keyboards .products-special-keyboards .special-holder .col-one h3 {
+          color: white;
+          font-size: 24px;
+          font-weight: 400; }
+        section.products-info-keyboards .products-special-keyboards .special-holder .col-one p {
+          color: #8e8e8e;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          padding: 5px 10px 20px 0; }
+          section.products-info-keyboards .products-special-keyboards .special-holder .col-one p a {
+            color: #dbdbdb;
+            font-weight: 500; }
+      section.products-info-keyboards .products-special-keyboards .special-holder .col-two {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        padding: 20px 30px;
+        max-width: 900px; }
+        section.products-info-keyboards .products-special-keyboards .special-holder .col-two h3 {
+          color: white;
+          font-size: 24px;
+          font-weight: 400; }
+        section.products-info-keyboards .products-special-keyboards .special-holder .col-two p {
+          text-align: left;
+          padding: 5px 10px 20px 0;
+          color: #8e8e8e;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px; }
+          section.products-info-keyboards .products-special-keyboards .special-holder .col-two p a {
+            color: #dbdbdb;
+            font-weight: 500; }
 
 .search-wrapper {
   display: none;
