@@ -8,6 +8,12 @@ section.products-list-keyboards{
         font-weight: 400;
         margin-top: 70px;
         margin-bottom: 20px;
+        @media (max-width:$lg) {//1024px
+            font-size: 60px;
+        }
+        @media (max-width:$md) {//768px
+            font-size: 40px;
+        }
     }
 
     .products-description{
@@ -16,6 +22,9 @@ section.products-list-keyboards{
         font-size: 16px;
         letter-spacing: 0.5px;
         padding-bottom: 50px;
+        @media (max-width:$md) {//768px
+            padding: 35px 85px;
+        }
     }
     .products-filter{
         color: $white;
@@ -32,7 +41,9 @@ section.products-list-keyboards{
             margin-right: 10px;
             cursor: pointer;
             transition: 0.3s;
-
+            @media (max-width:$sm) {//575px
+                margin-top: 25px;
+            }
             &.active{
                 background-color: $filter-active-bg;
                 color: $filter-active;
@@ -67,6 +78,21 @@ section.products-list-keyboards{
             transition: 0.4s;
             margin-top: 40px;
 
+            @media (max-width:$xl) {//1440px
+                width: 28%;
+            }
+
+            @media (max-width:$lg) {//1024px
+                width: 30%;
+            }
+            @media (max-width:$md) {//768px
+                width: 47%;
+            }
+            @media (max-width:$sm) {//575px
+                width: 85%;
+                height: 700px;
+            }
+
             &:hover{
                 border: 2px solid $filter-grey;
                 cursor: pointer;
@@ -78,15 +104,30 @@ section.products-list-keyboards{
             
             img{
                 padding: 20px;
-                max-width: 380px;
+                width: 85%;
                 display: block;
                 margin: auto;
+                @media (max-width:$lg) {//1024px
+                    width: 92%;
+                }
+                @media (max-width:$md) {//768px
+                    width: 92%;
+                }
+                @media (max-width:$sm) {//575px
+                    padding: 0;
+                    margin-top: -90px;
+                    width: 100%;
+                }
             }
 
             .product-shop-desc{
                 padding-left: 25px;
                 padding-right: 25px;
+                position: relative;
                 flex-grow: 1;
+                @media (max-width:$sm) {//575px
+                    margin: -20px 45px;
+                }
 
                 h3{
                     color: $white;
@@ -101,6 +142,9 @@ section.products-list-keyboards{
                     padding-top: 10px;
                     padding-bottom: 10px;
                     letter-spacing: 1px;
+                    @media (max-width:$sm) {//575px
+                        
+                    }
 
                     del{
                         color: $orange;
@@ -133,6 +177,40 @@ section.products-list-keyboards{
                     background-color: $white;
                     cursor: pointer;
                     color: $dark-grey;
+                }
+                @media (max-width:$xl) {//1440px
+                    position: absolute;
+                    width: auto;
+                    bottom: 45px;
+                    padding: 10px 80px;
+                    font-size: 18px;
+                    margin: 0 56px;
+                }
+
+                @media (max-width:$lg) {//1024px
+                    position: absolute;
+                    width: auto;
+                    bottom: 35px;
+                    padding: 10px 70px;
+                    font-size: 15px;
+                    margin: 0 30px;
+                    
+                }
+                @media (max-width:$md) {//768px
+                    position: absolute;
+                    width: auto;
+                    bottom: 55px;
+                    padding: 10px 70px;
+                    font-size: 15px;
+                    margin: 0 50px;
+                }
+                @media (max-width:$sm) {//575px
+                    position: absolute;
+                    width: auto;
+                    bottom: 45px;
+                    padding: 10px 80px;
+                    font-size: 15px;
+                    margin: 0px 110px;
                 }
             }
         }

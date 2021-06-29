@@ -1,26 +1,74 @@
 .products-hero-keyboards{
-    background-image: url("../img/keyboards-hero.jpg");
-    min-height: 480px;
-    background-size: cover;
+
+    img{
+        width:100%;
+        @media (max-width:$lg) { //1024px
+            height: 250px;
+        }
+        @media (max-width:$md) { //768px
+            height: 250px;
+        }
+        @media (max-width:$sm) { //575px
+            height: 200px;
+        }
+    }
     margin-top: 50px;
     position: relative;
+    @media (max-width:$lg) { //1024px
+        height: 350px;
+    }
+    @media (max-width:$md) { //768px
+        height: 250px;
+    }
+    @media (max-width:$sm) { //575px
+        height: 210px;
+    }
 
     &-info{
         position: absolute;
-        top: 150px;
-        left: 90px;
+        bottom: 25%;
+        left: 70px;
+        @media (max-width:$lg) { //1024px
+            bottom: 38%;
+            left: 50px;
+        }
+        @media (max-width:$md) { //768px
+            bottom: 10%;
+            left: 30px;
+        }
+        @media (max-width:$sm) { //575px
+            bottom: 0;
+        }
 
         span{
             background-color: $blue;
             padding: 10px 20px;
             color: $white;
             margin-bottom: 25px;
+            @media (max-width:$xl) { //1440px
+                padding: 10px 15px;
+            }
+            @media (max-width:$lg) { //1024px
+                padding: 5px 10px;
+            }
+            @media (max-width:$sm) { //575px
+                padding: 5px 5px;
+            }
         }
         p{
             font-size: 28px;
             color: $white;
             text-transform: uppercase;
             padding-top: 20px;
+            @media (max-width:$xl) { //1440px
+                font-size: 20px;
+            }
+            @media (max-width:$lg) { //1024px
+                font-size: 15px;
+            }
+            @media (max-width:$sm) { //575px
+                font-size: 10px;
+            }
         }
         h2{
             font-size: 60px;
@@ -28,6 +76,17 @@
             font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 40px;
+            @media (max-width:$xl) { //1440px
+                font-size: 40px;
+            }
+            @media (max-width:$lg) { //1024px
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            @media (max-width:$sm) { //575px
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
         }
         a{
             color: $black;
@@ -38,6 +97,17 @@
             font-weight: 500;
             font-size: 20px;
             letter-spacing: 0.5px;
+            @media (max-width:$xl) { //1440px
+                font-size: 15px;
+                padding: 10px 40px;
+            }
+            @media (max-width:$lg) { //1024px
+                font-size: 15px;
+                padding: 5px 25px;
+            }
+            @media (max-width:$sm) { //575px
+                display: none;
+            }
             
             &:hover{
                 background-color: $white;

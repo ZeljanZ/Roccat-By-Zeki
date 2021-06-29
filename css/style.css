@@ -16,9 +16,10 @@ body {
 .dole {
   height: 500px; }
 
-.clearfix {
-  overflow: auto;
-  clear: both; }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 header {
   background-color: black; }
@@ -35,7 +36,7 @@ header {
         display: inline-block;
         margin-right: 25px;
         margin: 5px; }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           header .pre-header ul li {
             margin-right: 0; } }
         header .pre-header ul li:first-child a {
@@ -52,7 +53,7 @@ header {
     background-color: black;
     width: 100%;
     z-index: 2; }
-    @media (max-width: 991px) {
+    @media (max-width: 1024px) {
       header nav {
         position: relative; } }
     header nav.fixed-nav {
@@ -76,14 +77,14 @@ header {
         display: none; }
       header nav .hamburger-menu-button :hover {
         color: blue; }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         header nav .hamburger-menu-button {
           display: block; } }
     header nav .logo-mobile {
       text-align: center;
       margin-top: -65px;
       display: none; }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         header nav .logo-mobile {
           display: block; } }
       header nav .logo-mobile a img {
@@ -91,7 +92,7 @@ header {
     header nav ul {
       list-style: none;
       float: left; }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         header nav ul {
           display: none;
           width: 100%;
@@ -110,7 +111,7 @@ header {
             width: 200px; }
           header nav ul li:first-child a:hover:after {
             display: none; }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           header nav ul li {
             display: block;
             text-align: center;
@@ -118,7 +119,7 @@ header {
             margin-top: 25px;
             font-weight: 600;
             letter-spacing: 3px; } }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           header nav ul li:first-child {
             display: none; } }
         header nav ul li a {
@@ -137,7 +138,7 @@ header {
       float: right;
       margin-right: 50px;
       margin-top: -1px; }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         header nav .nav-right-side {
           position: absolute;
           top: 45px;
@@ -157,10 +158,10 @@ section.hero h1 {
   text-align: center;
   margin-top: 170px;
   margin-bottom: 70px; }
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     section.hero h1 {
       margin-top: 70px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     section.hero h1 {
       font-size: 49px; } }
   @media (max-width: 575px) {
@@ -203,7 +204,7 @@ section.hero video {
   @media (max-width: 1050px) {
     .featured {
       width: 100%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .featured {
       display: block; } }
   .featured-item {
@@ -212,11 +213,11 @@ section.hero video {
         -ms-flex-positive: 1;
             flex-grow: 1;
     z-index: 1; }
-    @media (max-width: 991px) {
+    @media (max-width: 1024px) {
       .featured-item {
         padding: 10px;
         margin-top: -100px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .featured-item {
         padding: 105px; } }
     @media (max-width: 575px) {
@@ -228,13 +229,13 @@ section.hero video {
       @media (max-width: 1200px) {
         .featured-item img {
           width: 350px; } }
-      @media (max-width: 1199px) {
+      @media (max-width: 1440px) {
         .featured-item img {
           width: 100%; } }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         .featured-item img {
           width: 250px; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .featured-item img {
           width: 400px; } }
       @media (max-width: 575px) {
@@ -243,13 +244,13 @@ section.hero video {
     .featured-item p {
       max-width: 300px;
       margin: auto; }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         .featured-item p {
           padding-bottom: 80px; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .featured-item p {
           font-size: 25px; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .featured-item p {
           font-size: 18px; } }
     .featured-item a {
@@ -304,7 +305,7 @@ section.products {
       section.products h2 {
         font-size: 24px;
         padding: 15px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       section.products h2 {
         font-size: 30px;
         padding: 15px; } }
@@ -315,11 +316,11 @@ section.products {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
-    @media (max-width: 991px) {
+    @media (max-width: 1024px) {
       section.products .container {
         display: block;
         margin-left: 0px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       section.products .container {
         display: block; } }
     @media (max-width: 575px) {
@@ -331,11 +332,11 @@ section.products {
       color: white;
       position: relative;
       background-size: cover; }
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         section.products .container .products-item {
           height: 750px;
           width: auto; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         section.products .container .products-item {
           height: 550px;
           width: auto; } }
@@ -386,7 +387,7 @@ section.products {
           width: 90px;
           margin: 33%;
           padding: 10px; }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             section.products .container .products-item .overlay a {
               margin-left: 295px; } }
 
@@ -422,7 +423,7 @@ section.products {
     text-transform: uppercase;
     padding: 0 35%;
     margin-bottom: -25px; }
-    @media (max-width: 991px) {
+    @media (max-width: 1024px) {
       .mySlides .slides-des-1 h3 {
         margin: auto; } }
     .mySlides .slides-des-1 h3 span {
@@ -1255,7 +1256,7 @@ section.setup-proud {
       -ms-flex-line-pack: center;
           align-content: center;
       cursor: pointer; }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         section.setup-proud .setup-proud-item .row-list {
           display: block; } }
       section.setup-proud .setup-proud-item .row-list .row-item-1 {
@@ -1364,31 +1365,88 @@ section.setup-proud {
         white-space: nowrap; }
 
 .products-hero-keyboards {
-  background-image: url("../img/keyboards-hero.jpg");
-  min-height: 480px;
-  background-size: cover;
   margin-top: 50px;
   position: relative; }
+  .products-hero-keyboards img {
+    width: 100%; }
+    @media (max-width: 1024px) {
+      .products-hero-keyboards img {
+        height: 250px; } }
+    @media (max-width: 768px) {
+      .products-hero-keyboards img {
+        height: 250px; } }
+    @media (max-width: 575px) {
+      .products-hero-keyboards img {
+        height: 200px; } }
+  @media (max-width: 1024px) {
+    .products-hero-keyboards {
+      height: 350px; } }
+  @media (max-width: 768px) {
+    .products-hero-keyboards {
+      height: 250px; } }
+  @media (max-width: 575px) {
+    .products-hero-keyboards {
+      height: 210px; } }
   .products-hero-keyboards-info {
     position: absolute;
-    top: 150px;
-    left: 90px; }
+    bottom: 25%;
+    left: 70px; }
+    @media (max-width: 1024px) {
+      .products-hero-keyboards-info {
+        bottom: 38%;
+        left: 50px; } }
+    @media (max-width: 768px) {
+      .products-hero-keyboards-info {
+        bottom: 10%;
+        left: 30px; } }
+    @media (max-width: 575px) {
+      .products-hero-keyboards-info {
+        bottom: 0; } }
     .products-hero-keyboards-info span {
       background-color: blue;
       padding: 10px 20px;
       color: white;
       margin-bottom: 25px; }
+      @media (max-width: 1440px) {
+        .products-hero-keyboards-info span {
+          padding: 10px 15px; } }
+      @media (max-width: 1024px) {
+        .products-hero-keyboards-info span {
+          padding: 5px 10px; } }
+      @media (max-width: 575px) {
+        .products-hero-keyboards-info span {
+          padding: 5px 5px; } }
     .products-hero-keyboards-info p {
       font-size: 28px;
       color: white;
       text-transform: uppercase;
       padding-top: 20px; }
+      @media (max-width: 1440px) {
+        .products-hero-keyboards-info p {
+          font-size: 20px; } }
+      @media (max-width: 1024px) {
+        .products-hero-keyboards-info p {
+          font-size: 15px; } }
+      @media (max-width: 575px) {
+        .products-hero-keyboards-info p {
+          font-size: 10px; } }
     .products-hero-keyboards-info h2 {
       font-size: 60px;
       color: white;
       font-weight: 400;
       text-transform: uppercase;
       margin-bottom: 40px; }
+      @media (max-width: 1440px) {
+        .products-hero-keyboards-info h2 {
+          font-size: 40px; } }
+      @media (max-width: 1024px) {
+        .products-hero-keyboards-info h2 {
+          font-size: 30px;
+          margin-bottom: 20px; } }
+      @media (max-width: 575px) {
+        .products-hero-keyboards-info h2 {
+          font-size: 28px;
+          margin-bottom: 15px; } }
     .products-hero-keyboards-info a {
       color: black;
       background-color: rgba(242, 242, 242, 0.85);
@@ -1398,6 +1456,17 @@ section.setup-proud {
       font-weight: 500;
       font-size: 20px;
       letter-spacing: 0.5px; }
+      @media (max-width: 1440px) {
+        .products-hero-keyboards-info a {
+          font-size: 15px;
+          padding: 10px 40px; } }
+      @media (max-width: 1024px) {
+        .products-hero-keyboards-info a {
+          font-size: 15px;
+          padding: 5px 25px; } }
+      @media (max-width: 575px) {
+        .products-hero-keyboards-info a {
+          display: none; } }
       .products-hero-keyboards-info a:hover {
         background-color: white;
         cursor: pointer; }
@@ -1411,6 +1480,12 @@ section.products-list-keyboards h1 {
   font-weight: 400;
   margin-top: 70px;
   margin-bottom: 20px; }
+  @media (max-width: 1024px) {
+    section.products-list-keyboards h1 {
+      font-size: 60px; } }
+  @media (max-width: 768px) {
+    section.products-list-keyboards h1 {
+      font-size: 40px; } }
 
 section.products-list-keyboards .products-description {
   text-align: center;
@@ -1418,6 +1493,9 @@ section.products-list-keyboards .products-description {
   font-size: 16px;
   letter-spacing: 0.5px;
   padding-bottom: 50px; }
+  @media (max-width: 768px) {
+    section.products-list-keyboards .products-description {
+      padding: 35px 85px; } }
 
 section.products-list-keyboards .products-filter {
   color: white;
@@ -1434,6 +1512,9 @@ section.products-list-keyboards .products-filter {
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
+    @media (max-width: 575px) {
+      section.products-list-keyboards .products-filter li {
+        margin-top: 25px; } }
     section.products-list-keyboards .products-filter li.active {
       background-color: #f2f2f2;
       color: #1c1c1c;
@@ -1470,6 +1551,19 @@ section.products-list-keyboards .products-wrapper {
       -webkit-transition: 0.4s;
       transition: 0.4s;
       margin-top: 40px; }
+      @media (max-width: 1440px) {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
+          width: 28%; } }
+      @media (max-width: 1024px) {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
+          width: 30%; } }
+      @media (max-width: 768px) {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
+          width: 47%; } }
+      @media (max-width: 575px) {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item {
+          width: 85%;
+          height: 700px; } }
       section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item:hover {
         border: 2px solid #8e8e8e;
         cursor: pointer;
@@ -1482,15 +1576,30 @@ section.products-list-keyboards .products-wrapper {
                   transform: scale(1.08); }
       section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
         padding: 20px;
-        max-width: 380px;
+        width: 85%;
         display: block;
         margin: auto; }
+        @media (max-width: 1024px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
+            width: 92%; } }
+        @media (max-width: 768px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
+            width: 92%; } }
+        @media (max-width: 575px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item img {
+            padding: 0;
+            margin-top: -90px;
+            width: 100%; } }
       section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc {
         padding-left: 25px;
         padding-right: 25px;
+        position: relative;
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
+        @media (max-width: 575px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc {
+            margin: -20px 45px; } }
         section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h3 {
           color: white;
           font-size: 20px;
@@ -1529,6 +1638,38 @@ section.products-list-keyboards .products-wrapper {
           background-color: white;
           cursor: pointer;
           color: #252525; }
+        @media (max-width: 1440px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
+            position: absolute;
+            width: auto;
+            bottom: 45px;
+            padding: 10px 80px;
+            font-size: 18px;
+            margin: 0 56px; } }
+        @media (max-width: 1024px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
+            position: absolute;
+            width: auto;
+            bottom: 35px;
+            padding: 10px 70px;
+            font-size: 15px;
+            margin: 0 30px; } }
+        @media (max-width: 768px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
+            position: absolute;
+            width: auto;
+            bottom: 55px;
+            padding: 10px 70px;
+            font-size: 15px;
+            margin: 0 50px; } }
+        @media (max-width: 575px) {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item a {
+            position: absolute;
+            width: auto;
+            bottom: 45px;
+            padding: 10px 80px;
+            font-size: 15px;
+            margin: 0px 110px; } }
 
 .product-inner-wrapper-keyboards {
   padding-top: 100px; }
@@ -1553,7 +1694,7 @@ section.products-list-keyboards .products-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 100px; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .product-inner-wrapper-keyboards .left-right-products {
         display: block; } }
     @media (max-width: 575px) {
@@ -1781,21 +1922,39 @@ section.products-info-keyboards {
       display: -ms-flexbox;
       display: flex;
       background-color: #f9fAfb;
-      height: 600px; }
+      height: 50%; }
+      @media (max-width: 768px) {
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards {
+          -ms-flex-wrap: wrap-reverse;
+              flex-wrap: wrap-reverse; } }
       section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder {
         padding: 100px 0 100px 100px;
         background-color: #f9fAfb; }
+        @media (max-width: 768px) {
+          section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder {
+            padding: 100px 0 0px 100px; } }
         section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h4 {
           font-size: 18px;
           text-align: left;
           text-transform: uppercase;
           font-weight: 400; }
+          @media (max-width: 768px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h4 {
+              text-align: center;
+              padding-right: 50px; } }
         section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h2 {
           max-width: 950px;
           text-transform: uppercase;
           font-size: 64px;
           text-align: left;
           font-weight: 400; }
+          @media (max-width: 768px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h2 {
+              font-size: 44px;
+              text-align: center;
+              padding-right: 50px;
+              max-width: 500px;
+              margin: 0 auto; } }
         section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p {
           margin-top: 20px;
           max-width: 670px;
@@ -1803,6 +1962,11 @@ section.products-info-keyboards {
           text-align: left;
           line-height: 25px;
           padding-right: 20px; }
+          @media (max-width: 768px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p {
+              text-align: center;
+              margin-left: -45px;
+              padding-right: 30px; } }
         section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder a {
           background-color: #dfff08;
           padding: 10px 40px 10px 50px;
@@ -1814,12 +1978,38 @@ section.products-info-keyboards {
           color: black; }
           section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder a i {
             padding-left: 15px; }
+          @media (max-width: 768px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder a {
+              text-align: center;
+              margin: 50px 30%; } }
+          @media (max-width: 575px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder a {
+              text-align: center;
+              margin: 50px 20%; } }
       section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder {
-        padding-right: 70px;
-        padding-top: 80px; }
+        padding-right: 0px;
+        padding-left: 50px;
+        padding-top: 90px; }
+        @media (max-width: 768px) {
+          section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder {
+            padding-top: 20px;
+            padding-left: 100px; } }
         section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder img {
-          width: 850px;
-          height: 450px; }
+          width: 60%;
+          height: 90%; }
+          @media (max-width: 1440px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder img {
+              width: 85%;
+              height: 85%; } }
+          @media (max-width: 1024px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder img {
+              padding-top: 90px;
+              width: 80%;
+              height: 60%; } }
+          @media (max-width: 768px) {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-image-holder img {
+              width: 80%;
+              height: 90%; } }
   section.products-info-keyboards .products-special-keyboards {
     background-color: black; }
     section.products-info-keyboards .products-special-keyboards h2 {
@@ -1834,6 +2024,9 @@ section.products-info-keyboards {
       display: -ms-flexbox;
       display: flex;
       padding-bottom: 60px; }
+      @media (max-width: 768px) {
+        section.products-info-keyboards .products-special-keyboards .special-holder {
+          display: block; } }
       section.products-info-keyboards .products-special-keyboards .special-holder .col-one {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
@@ -1858,7 +2051,7 @@ section.products-info-keyboards {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1;
-        padding: 20px 30px;
+        padding: 20px 50px;
         max-width: 900px; }
         section.products-info-keyboards .products-special-keyboards .special-holder .col-two h3 {
           color: white;

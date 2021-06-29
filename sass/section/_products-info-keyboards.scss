@@ -10,15 +10,25 @@ section.products-info-keyboards{
         .products-optical-keyboards{
             display: flex;
             background-color: #f9fAfb;
-            height: 600px;
+            height: 50%;
+            @media (max-width:$md) {
+                flex-wrap: wrap-reverse;
+            }
             .optical-desc-holder{
                 padding: 100px 0 100px 100px;
                 background-color: #f9fAfb;
+                @media (max-width:$md) {
+                    padding: 100px 0 0px 100px;
+                }
                 h4{
                     font-size: 18px;
                     text-align: left;
                     text-transform: uppercase;
                     font-weight: 400;
+                    @media (max-width:$md) {
+                        text-align: center;
+                        padding-right: 50px;
+                    }
                 }
                 h2{
                     max-width: 950px;
@@ -26,6 +36,13 @@ section.products-info-keyboards{
                     font-size: 64px;
                     text-align: left;
                     font-weight: 400;
+                    @media (max-width:$md) {
+                        font-size: 44px;
+                        text-align: center;
+                        padding-right: 50px;
+                        max-width: 500px;
+                        margin: 0 auto;
+                    }
                 } 
                 p{
                     margin-top: 20px;
@@ -34,6 +51,12 @@ section.products-info-keyboards{
                     text-align: left;
                     line-height: 25px;
                     padding-right: 20px;
+                    @media (max-width:$md) {
+                        text-align: center;
+                        margin-left: -45px;
+                        padding-right: 30px;
+                    }
+
                 }
                 a{
                     background-color: #dfff08;
@@ -47,15 +70,44 @@ section.products-info-keyboards{
                     i{
                         padding-left: 15px;
                     }
+                    @media (max-width:$md) {//768px
+                        text-align: center;
+                        margin: 50px 30%;
+                    }
+                    @media (max-width:$sm) {//575px
+                        text-align: center;
+                        margin: 50px 20%;
+                    }
                 }
             }
             .optical-image-holder{
-                padding-right: 70px;
-                padding-top: 80px;
+                padding-right: 0px;
+                padding-left: 50px;
+                padding-top: 90px;
+                @media (max-width:$md) {// 768px
+                    padding-top: 20px;
+                    padding-left: 100px;
+                }
                 img{
-                    width: 850px;
-                    height:450px;
+                    width: 60%;
+                    height: 90%;
+
+                    @media (max-width:$xl) { //1440px
+                        width: 85%;
+                        height: 85%;
+                        
+                    }
+                    @media (max-width:$lg) { //1024px
+                        padding-top: 90px;
+                        width: 80%;
+                        height: 60%;
+                        
+                    }
                     
+                    @media (max-width:$md) {// 768px
+                        width: 80%;
+                        height: 90%;
+                    }
                 }
             }
         }
@@ -73,6 +125,11 @@ section.products-info-keyboards{
         .special-holder{
             display: flex;
             padding-bottom: 60px;
+            
+            @media (max-width:$md) {// 768px
+                display: block;
+            }
+
 
             .col-one{
                 flex-grow: 1;
@@ -98,7 +155,7 @@ section.products-info-keyboards{
             }
             .col-two{
                 flex-grow: 1;
-                padding: 20px 30px;
+                padding: 20px 50px;
                 max-width: 900px;
                 h3{
                     color: $white;

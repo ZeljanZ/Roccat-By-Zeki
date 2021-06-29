@@ -17,8 +17,9 @@ body{
 .dole{
     height: 500px;
 }
-.clearfix {
-    overflow: auto;
+.clearfix::after {
+    content: "";
     clear: both;
+    display: table;
 }
 
