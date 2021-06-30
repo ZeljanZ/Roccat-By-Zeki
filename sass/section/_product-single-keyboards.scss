@@ -9,21 +9,26 @@ section.product-single-keyboards{
         display: flex;
         flex-direction:row;
         
-        
+        @media (max-width:$sm) { //575px
+            flex-direction: column;
+        }
         
 
         .product-single-images{
-            max-height: 850px;
+            height: 850px;
             display: grid;
             grid-template:  "a a"
                             "b c"
                             "d d"
                             "e f";
-            max-width:57%;
+            width:57%;
             overflow: auto;
             &::-webkit-scrollbar {
                 visibility: hidden;
-            
+            }
+            @media (max-width:$sm) { //575px
+                width: 102%;
+                height: 100%;
             }
             
             #img-1{
@@ -75,6 +80,7 @@ section.product-single-keyboards{
                 align-content: stretch;
                 justify-content: stretch;
                 background-color: antiquewhite;
+                
             }
 
         }
@@ -82,6 +88,18 @@ section.product-single-keyboards{
             // position: fixed;
             margin-top: 50px;
             margin-left: 80px;
+            @media (max-width:$xl) { //1440px
+                width: 40%;
+                margin-top: 60px;
+            }
+            @media (max-width:$lg) { //1024px
+                width: 50%;
+                margin-top: 10px;
+            }
+            @media (max-width:$sm) { //575px
+                width: 85%;
+                margin-top: 30px;
+            }
             h5{
                 font-size: 16px;
                 font-weight: 300;
@@ -100,7 +118,6 @@ section.product-single-keyboards{
                 li{
                     font-size: 16px;
                     text-align: left;
-                    
                 }
             }
 
@@ -115,6 +132,10 @@ section.product-single-keyboards{
                     del{
                         
                         color: red;
+                    }
+                    @media (max-width:$lg) { //1024px
+                        width: 90%;
+                        padding-left: 15px;
                     }
                 }
                 .btn-add{
@@ -135,6 +156,13 @@ section.product-single-keyboards{
                         background-color: lighten($color: $red-cart, $amount: 10);
                         cursor: pointer;
                     }
+                    @media (max-width:$lg) { //1024px
+                        width: 90%;
+                        font-size: 16px;
+                    }
+                    @media (max-width:$xl) { //1440px
+                        width: 90%;
+                    }
                 }
                 .btn-buy{
                     @extend .btn-add;
@@ -153,6 +181,9 @@ section.product-single-keyboards{
 }
 section.product-specification{
     background-color: white;
+    @media (max-width:$sm) { //575px
+        width: 103%;
+    }
 
     .product-accordion{
         margin: 0 18%;
@@ -160,6 +191,7 @@ section.product-specification{
         height: auto;
         padding-top: 100px;
         padding-bottom: 100px;
+        
 
         h2{
             text-align: center;
@@ -167,6 +199,12 @@ section.product-specification{
             font-weight: 400;
             color: $dark-grey;
             padding-bottom: 50px;
+            @media (max-width:$sm) { //575px
+                font-size: 35px;
+            }
+            @media (max-width:$md) { //768px
+                font-size: 40px;
+            }
         }
         .accordion{
             background-color: $filter-active-bg;
@@ -182,6 +220,14 @@ section.product-specification{
             font-weight: 500;
             transition: 0.4s;
             margin-bottom: 10px;
+            @media (max-width:$sm) { //575px
+                width: 130%;
+                margin-left: -55px;
+            }
+            @media (max-width:$md) { //768px
+                width: 130%;
+                margin-left: -75px;
+            }
         }
         
             .active, .accordion:hover {
@@ -215,6 +261,14 @@ section.product-specification{
                 overflow: hidden;
                 transition: max-height 0.2s ease-out;
                 margin-bottom: 10px;
+                @media (max-width:$sm) { //575px
+                    width: 130%;
+                    margin-left: -55px;
+                }
+                @media (max-width:$md) { //768px
+                    width: 130%;
+                    margin-left: -75px;
+                }
                 ul{
                     list-style-type: square;
                     list-style-position: inside;

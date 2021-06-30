@@ -1680,6 +1680,9 @@ section.products-list-keyboards .products-wrapper {
     color: white;
     padding: 20px;
     letter-spacing: 8px; }
+    @media (max-width: 575px) {
+      .product-inner-wrapper-keyboards h2 {
+        font-size: 45px; } }
   .product-inner-wrapper-keyboards p {
     text-align: center;
     color: #8e8e8e;
@@ -1687,6 +1690,10 @@ section.products-list-keyboards .products-wrapper {
     font-size: 16px;
     max-width: 1000px;
     margin: auto; }
+    @media (max-width: 575px) {
+      .product-inner-wrapper-keyboards p {
+        font-size: 20px;
+        padding: 15px; } }
   .product-inner-wrapper-keyboards .left-right-products {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1694,14 +1701,20 @@ section.products-list-keyboards .products-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 100px; }
-    @media (max-width: 768px) {
-      .product-inner-wrapper-keyboards .left-right-products {
-        display: block; } }
     @media (max-width: 575px) {
       .product-inner-wrapper-keyboards .left-right-products {
-        display: block; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse; } }
     .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
       width: 50%; }
+      @media (max-width: 575px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
+          width: auto; } }
+      @media (max-width: 768px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
+          height: 450px; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
         padding-top: 220px;
         padding-left: 100px;
@@ -1709,6 +1722,15 @@ section.products-list-keyboards .products-wrapper {
         font-weight: 400;
         font-size: 36px;
         padding-bottom: 10px; }
+        @media (max-width: 768px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
+            padding: 8%;
+            font-size: 30px; } }
+        @media (max-width: 575px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
+            padding: 20% 7%;
+            font-size: 28px;
+            padding-bottom: 0; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
         padding-top: 30px;
         text-align: left;
@@ -1719,11 +1741,23 @@ section.products-list-keyboards .products-wrapper {
         .product-inner-wrapper-keyboards .left-right-products .side-product-desc p span {
           color: #f97000;
           cursor: pointer; }
+        @media (max-width: 768px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+            padding: 20% 8%;
+            font-size: 18px;
+            margin-top: -50px; } }
+        @media (max-width: 575px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+            padding: 5% 7%;
+            font-size: 22px; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
         text-align: left;
         padding-left: 100px;
         color: white;
         font-weight: 400; }
+        @media (max-width: 575px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
+            padding-left: 50px; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li {
         padding-left: 100px;
         list-style: none;
@@ -1731,8 +1765,27 @@ section.products-list-keyboards .products-wrapper {
         line-height: 1.6; }
         .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li span {
           color: #f97000; }
+        @media (max-width: 768px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li {
+            padding: 8%;
+            margin-top: -65px; } }
+        @media (max-width: 575px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li {
+            padding-left: 50px; } }
+      @media (max-width: 768px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul {
+          display: none; } }
+      @media (max-width: 575px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul {
+          padding-bottom: 50px; } }
     .product-inner-wrapper-keyboards .left-right-products .side-product-image {
       width: 50%; }
+      @media (max-width: 768px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-image {
+          height: 450px; } }
+      @media (max-width: 575px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-image {
+          width: 103%; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-image img {
         width: 100%;
         height: 100%; }
@@ -1751,15 +1804,25 @@ section.product-single-keyboards {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+    @media (max-width: 575px) {
+      section.product-single-keyboards .product-single {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     section.product-single-keyboards .product-single .product-single-images {
-      max-height: 850px;
+      height: 850px;
       display: -ms-grid;
       display: grid;
       grid-template: "a a" "b c" "d d" "e f";
-      max-width: 57%;
+      width: 57%;
       overflow: auto; }
       section.product-single-keyboards .product-single .product-single-images::-webkit-scrollbar {
         visibility: hidden; }
+      @media (max-width: 575px) {
+        section.product-single-keyboards .product-single .product-single-images {
+          width: 102%;
+          height: 100%; } }
       section.product-single-keyboards .product-single .product-single-images #img-1 {
         grid-area: a; }
         section.product-single-keyboards .product-single .product-single-images #img-1 img {
@@ -1803,6 +1866,18 @@ section.product-single-keyboards {
     section.product-single-keyboards .product-single .product-single-description {
       margin-top: 50px;
       margin-left: 80px; }
+      @media (max-width: 1440px) {
+        section.product-single-keyboards .product-single .product-single-description {
+          width: 40%;
+          margin-top: 60px; } }
+      @media (max-width: 1024px) {
+        section.product-single-keyboards .product-single .product-single-description {
+          width: 50%;
+          margin-top: 10px; } }
+      @media (max-width: 575px) {
+        section.product-single-keyboards .product-single .product-single-description {
+          width: 85%;
+          margin-top: 30px; } }
       section.product-single-keyboards .product-single .product-single-description h5 {
         font-size: 16px;
         font-weight: 300;
@@ -1825,6 +1900,10 @@ section.product-single-keyboards {
           margin-bottom: 35px; }
           section.product-single-keyboards .product-single .product-single-description .product-form p del {
             color: red; }
+          @media (max-width: 1024px) {
+            section.product-single-keyboards .product-single .product-single-description .product-form p {
+              width: 90%;
+              padding-left: 15px; } }
         section.product-single-keyboards .product-single .product-single-description .product-form .btn-add, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
           height: 53px;
           width: 667px;
@@ -1841,6 +1920,13 @@ section.product-single-keyboards {
           section.product-single-keyboards .product-single .product-single-description .product-form .btn-add:hover, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy:hover {
             background-color: #e7415d;
             cursor: pointer; }
+          @media (max-width: 1024px) {
+            section.product-single-keyboards .product-single .product-single-description .product-form .btn-add, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
+              width: 90%;
+              font-size: 16px; } }
+          @media (max-width: 1440px) {
+            section.product-single-keyboards .product-single .product-single-description .product-form .btn-add, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
+              width: 90%; } }
         section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
           color: black;
           background-color: white; }
@@ -1850,6 +1936,9 @@ section.product-single-keyboards {
 
 section.product-specification {
   background-color: white; }
+  @media (max-width: 575px) {
+    section.product-specification {
+      width: 103%; } }
   section.product-specification .product-accordion {
     margin: 0 18%;
     background-color: white;
@@ -1862,6 +1951,12 @@ section.product-specification {
       font-weight: 400;
       color: #252525;
       padding-bottom: 50px; }
+      @media (max-width: 575px) {
+        section.product-specification .product-accordion h2 {
+          font-size: 35px; } }
+      @media (max-width: 768px) {
+        section.product-specification .product-accordion h2 {
+          font-size: 40px; } }
     section.product-specification .product-accordion .accordion {
       background-color: #f2f2f2;
       color: #444;
@@ -1877,6 +1972,14 @@ section.product-specification {
       -webkit-transition: 0.4s;
       transition: 0.4s;
       margin-bottom: 10px; }
+      @media (max-width: 575px) {
+        section.product-specification .product-accordion .accordion {
+          width: 130%;
+          margin-left: -55px; } }
+      @media (max-width: 768px) {
+        section.product-specification .product-accordion .accordion {
+          width: 130%;
+          margin-left: -75px; } }
     section.product-specification .product-accordion .active, section.product-specification .product-accordion .accordion:hover {
       background-color: #333333;
       color: white; }
@@ -1903,6 +2006,14 @@ section.product-specification {
       -webkit-transition: max-height 0.2s ease-out;
       transition: max-height 0.2s ease-out;
       margin-bottom: 10px; }
+      @media (max-width: 575px) {
+        section.product-specification .product-accordion .panel {
+          width: 130%;
+          margin-left: -55px; } }
+      @media (max-width: 768px) {
+        section.product-specification .product-accordion .panel {
+          width: 130%;
+          margin-left: -75px; } }
       section.product-specification .product-accordion .panel ul {
         list-style-type: square;
         list-style-position: inside; }
