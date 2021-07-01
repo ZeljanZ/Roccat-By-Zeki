@@ -1709,12 +1709,12 @@ section.products-list-keyboards .products-wrapper {
                 flex-direction: column-reverse; } }
     .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
       width: 50%; }
-      @media (max-width: 575px) {
-        .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
-          width: auto; } }
       @media (max-width: 768px) {
         .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
           height: 450px; } }
+      @media (max-width: 575px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc {
+          width: auto; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
         padding-top: 220px;
         padding-left: 100px;
@@ -1722,13 +1722,21 @@ section.products-list-keyboards .products-wrapper {
         font-weight: 400;
         font-size: 36px;
         padding-bottom: 10px; }
+        @media (max-width: 1440px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
+            padding: 15% 10% 5% 10%;
+            font-size: 32px; } }
+        @media (max-width: 1024px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
+            padding: 20% 8% 5% 8%;
+            font-size: 27px; } }
         @media (max-width: 768px) {
           .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
             padding: 8%;
             font-size: 30px; } }
         @media (max-width: 575px) {
           .product-inner-wrapper-keyboards .left-right-products .side-product-desc h3 {
-            padding: 20% 7%;
+            padding: 10% 7%;
             font-size: 28px;
             padding-bottom: 0; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
@@ -1741,6 +1749,15 @@ section.products-list-keyboards .products-wrapper {
         .product-inner-wrapper-keyboards .left-right-products .side-product-desc p span {
           color: #f97000;
           cursor: pointer; }
+        @media (max-width: 1440px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+            padding: 2% 10% 5% 10%;
+            font-size: 19px; } }
+        @media (max-width: 1024px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+            padding: 10% 8%;
+            font-size: 20px;
+            margin-top: -50px; } }
         @media (max-width: 768px) {
           .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
             padding: 20% 8%;
@@ -1748,13 +1765,16 @@ section.products-list-keyboards .products-wrapper {
             margin-top: -50px; } }
         @media (max-width: 575px) {
           .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
-            padding: 5% 7%;
+            padding: 15% 7%;
             font-size: 22px; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
         text-align: left;
         padding-left: 100px;
         color: white;
         font-weight: 400; }
+        @media (max-width: 1440px) {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
+            margin-bottom: -30px; } }
         @media (max-width: 575px) {
           .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
             padding-left: 50px; } }
@@ -1772,6 +1792,15 @@ section.products-list-keyboards .products-wrapper {
         @media (max-width: 575px) {
           .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li {
             padding-left: 50px; } }
+      @media (max-width: 1440px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul {
+          font-size: 18px;
+          margin-top: -27px;
+          margin-left: -25px;
+          padding-bottom: 25px; } }
+      @media (max-width: 1024px) {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul {
+          display: none; } }
       @media (max-width: 768px) {
         .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul {
           display: none; } }
