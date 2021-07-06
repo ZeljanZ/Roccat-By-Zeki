@@ -280,5 +280,90 @@ section.product-specification{
                 }
             }
         }
+}
+section.grip_styles{
     
+    .gripstyles-wrapper{
+        padding: 5rem;
+
+        p{
+            font-size: 1.2rem;
+            color: $white;
+            text-align: center;
+            padding-top: 30px;
+        }
+        h2{
+            @extend p;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+    .slideshow-container{
+        background-image: linear-gradient(180deg, #000 20%, #393939 120%);
+        color: $white;
+        .mySlides{
+            padding-bottom: 50px;
+            .slides-wrapper-mice{
+                img{
+                    margin-left: 25%;
+                    width: 50%;
+                }
+                h3{
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    span{
+                        color: #00a8ff;
+                    }
+                }
+                .text{
+                    text-align: center;
+                    padding: 0 0 50px 0;
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .prev, .next{
+            border-radius: 50%;
+            padding: 25px;
+            top: 160px;
+            margin: 15px;
+        }
+    }
+    .dot{
+        margin-top: -15px;
+        background-color: #00a8ff;
+    }
+}
+section.phantomflex{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    h2{
+        position: absolute;
+        margin-top: 22%;
+        font-size: 36px;
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+        letter-spacing: 6px;
+        overflow-wrap: break-word;
+        padding: 0 27%;
+        span{
+            font-weight: 600;
+        }
+    }
+    p{
+        position: absolute;
+        margin-top: 28%;
+        color: $white;
+        text-align: center;
+        padding: 20px 22%;
+        
+    }
 }

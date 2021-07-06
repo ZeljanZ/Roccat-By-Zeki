@@ -241,17 +241,17 @@ section.hero video {
       @media (max-width: 575px) {
         .featured-item img {
           width: 250px; } }
-    .featured-item p {
+    .featured-item p, .featured-item section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .featured-item h2 {
       max-width: 300px;
       margin: auto; }
       @media (max-width: 1024px) {
-        .featured-item p {
+        .featured-item p, .featured-item section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .featured-item h2 {
           padding-bottom: 80px; } }
       @media (max-width: 768px) {
-        .featured-item p {
+        .featured-item p, .featured-item section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .featured-item h2 {
           font-size: 25px; } }
       @media (max-width: 768px) {
-        .featured-item p {
+        .featured-item p, .featured-item section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .featured-item h2 {
           font-size: 18px; } }
     .featured-item a {
       position: absolute;
@@ -369,7 +369,7 @@ section.products {
         section.products .container .products-item .products-info h3 {
           font-size: 32px;
           font-weight: 400; }
-        section.products .container .products-item .products-info p {
+        section.products .container .products-item .products-info p, section.products .container .products-item .products-info section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.products .container .products-item .products-info h2 {
           font-size: 18px; }
       section.products .container .products-item .overlay {
         display: none;
@@ -1234,7 +1234,7 @@ section.setup-proud {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -1.5px; }
-  section.setup-proud p {
+  section.setup-proud p, section.setup-proud section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.setup-proud h2 {
     text-align: center;
     margin-bottom: 100px;
     font-weight: 400;
@@ -1416,19 +1416,19 @@ section.setup-proud {
       @media (max-width: 575px) {
         .products-hero-keyboards-info span {
           padding: 5px 5px; } }
-    .products-hero-keyboards-info p {
+    .products-hero-keyboards-info p, .products-hero-keyboards-info section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .products-hero-keyboards-info h2 {
       font-size: 28px;
       color: white;
       text-transform: uppercase;
       padding-top: 20px; }
       @media (max-width: 1440px) {
-        .products-hero-keyboards-info p {
+        .products-hero-keyboards-info p, .products-hero-keyboards-info section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .products-hero-keyboards-info h2 {
           font-size: 20px; } }
       @media (max-width: 1024px) {
-        .products-hero-keyboards-info p {
+        .products-hero-keyboards-info p, .products-hero-keyboards-info section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .products-hero-keyboards-info h2 {
           font-size: 15px; } }
       @media (max-width: 575px) {
-        .products-hero-keyboards-info p {
+        .products-hero-keyboards-info p, .products-hero-keyboards-info section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .products-hero-keyboards-info h2 {
           font-size: 10px; } }
     .products-hero-keyboards-info h2 {
       font-size: 60px;
@@ -1605,14 +1605,14 @@ section.products-list-keyboards .products-wrapper {
           font-size: 20px;
           font-weight: 400;
           letter-spacing: 1px; }
-        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p {
+        section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p, section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h2 {
           color: white;
           font-size: 20px;
           font-weight: 400;
           padding-top: 10px;
           padding-bottom: 10px;
           letter-spacing: 1px; }
-          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p del {
+          section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc p del, section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc section.grip_styles .gripstyles-wrapper h2 del, section.grip_styles .gripstyles-wrapper section.products-list-keyboards .products-wrapper .pruduct-col .products-shop-item .product-shop-desc h2 del {
             color: #f97000;
             margin-left: 5px;
             font-size: 18px; }
@@ -1683,7 +1683,7 @@ section.products-list-keyboards .products-wrapper {
     @media (max-width: 575px) {
       .product-inner-wrapper-keyboards h2 {
         font-size: 45px; } }
-  .product-inner-wrapper-keyboards p {
+  .product-inner-wrapper-keyboards p, .product-inner-wrapper-keyboards section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards h2 {
     text-align: center;
     color: #8e8e8e;
     font-weight: 300;
@@ -1691,7 +1691,7 @@ section.products-list-keyboards .products-wrapper {
     max-width: 1000px;
     margin: auto; }
     @media (max-width: 575px) {
-      .product-inner-wrapper-keyboards p {
+      .product-inner-wrapper-keyboards p, .product-inner-wrapper-keyboards section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards h2 {
         font-size: 20px;
         padding: 15px; } }
   .product-inner-wrapper-keyboards .left-right-products {
@@ -1739,44 +1739,44 @@ section.products-list-keyboards .products-wrapper {
             padding: 10% 7%;
             font-size: 28px;
             padding-bottom: 0; } }
-      .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+      .product-inner-wrapper-keyboards .left-right-products .side-product-desc p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc h2 {
         padding-top: 30px;
         text-align: left;
         padding-left: 100px;
         padding-right: 100px;
         font-size: 18px;
         line-height: 1.6; }
-        .product-inner-wrapper-keyboards .left-right-products .side-product-desc p span {
+        .product-inner-wrapper-keyboards .left-right-products .side-product-desc p span, .product-inner-wrapper-keyboards .left-right-products .side-product-desc section.grip_styles .gripstyles-wrapper h2 span, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc h2 span {
           color: #f97000;
           cursor: pointer; }
         @media (max-width: 1440px) {
-          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc h2 {
             padding: 2% 10% 5% 10%;
             font-size: 19px; } }
         @media (max-width: 1024px) {
-          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc h2 {
             padding: 10% 8%;
             font-size: 20px;
             margin-top: -50px; } }
         @media (max-width: 768px) {
-          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc h2 {
             padding: 20% 8%;
             font-size: 18px;
             margin-top: -50px; } }
         @media (max-width: 575px) {
-          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc h2 {
             padding: 15% 7%;
             font-size: 22px; } }
-      .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
+      .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul h2 {
         text-align: left;
         padding-left: 100px;
         color: white;
         font-weight: 400; }
         @media (max-width: 1440px) {
-          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul h2 {
             margin-bottom: -30px; } }
         @media (max-width: 575px) {
-          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p {
+          .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul p, .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul h2 {
             padding-left: 50px; } }
       .product-inner-wrapper-keyboards .left-right-products .side-product-desc ul li {
         padding-left: 100px;
@@ -1924,13 +1924,13 @@ section.product-single-keyboards {
           text-align: left; }
       section.product-single-keyboards .product-single .product-single-description .product-form {
         margin-top: 20px; }
-        section.product-single-keyboards .product-single .product-single-description .product-form p {
+        section.product-single-keyboards .product-single .product-single-description .product-form p, section.product-single-keyboards .product-single .product-single-description .product-form section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.product-single-keyboards .product-single .product-single-description .product-form h2 {
           font-size: 24px;
           margin-bottom: 35px; }
-          section.product-single-keyboards .product-single .product-single-description .product-form p del {
+          section.product-single-keyboards .product-single .product-single-description .product-form p del, section.product-single-keyboards .product-single .product-single-description .product-form section.grip_styles .gripstyles-wrapper h2 del, section.grip_styles .gripstyles-wrapper section.product-single-keyboards .product-single .product-single-description .product-form h2 del {
             color: red; }
           @media (max-width: 1024px) {
-            section.product-single-keyboards .product-single .product-single-description .product-form p {
+            section.product-single-keyboards .product-single .product-single-description .product-form p, section.product-single-keyboards .product-single .product-single-description .product-form section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.product-single-keyboards .product-single .product-single-description .product-form h2 {
               width: 90%;
               padding-left: 15px; } }
         section.product-single-keyboards .product-single .product-single-description .product-form .btn-add, section.product-single-keyboards .product-single .product-single-description .product-form .btn-buy {
@@ -2051,6 +2051,73 @@ section.product-specification {
           line-height: 25px;
           font-weight: 400; }
 
+section.grip_styles .gripstyles-wrapper {
+  padding: 5rem; }
+  section.grip_styles .gripstyles-wrapper p, section.grip_styles .gripstyles-wrapper h2 {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding-top: 30px; }
+  section.grip_styles .gripstyles-wrapper h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500; }
+
+section.grip_styles .slideshow-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #000), color-stop(120%, #393939));
+  background-image: linear-gradient(180deg, #000 20%, #393939 120%);
+  color: white; }
+  section.grip_styles .slideshow-container .mySlides {
+    padding-bottom: 50px; }
+    section.grip_styles .slideshow-container .mySlides .slides-wrapper-mice img {
+      margin-left: 25%;
+      width: 50%; }
+    section.grip_styles .slideshow-container .mySlides .slides-wrapper-mice h3 {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 400; }
+      section.grip_styles .slideshow-container .mySlides .slides-wrapper-mice h3 span {
+        color: #00a8ff; }
+    section.grip_styles .slideshow-container .mySlides .slides-wrapper-mice .text, section.grip_styles .slideshow-container .mySlides .slides-wrapper-mice .slides-des-1 h3, section.grip_styles .slideshow-container .mySlides .slides-des-1 .slides-wrapper-mice h3 {
+      text-align: center;
+      padding: 0 0 50px 0;
+      max-width: 600px;
+      margin: 0 auto; }
+  section.grip_styles .slideshow-container .prev, section.grip_styles .slideshow-container .next {
+    border-radius: 50%;
+    padding: 25px;
+    top: 160px;
+    margin: 15px; }
+
+section.grip_styles .dot {
+  margin-top: -15px;
+  background-color: #00a8ff; }
+
+section.phantomflex {
+  position: relative; }
+  section.phantomflex img {
+    width: 100%; }
+  section.phantomflex h2 {
+    position: absolute;
+    margin-top: 22%;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 6px;
+    overflow-wrap: break-word;
+    padding: 0 27%; }
+    section.phantomflex h2 span {
+      font-weight: 600; }
+  section.phantomflex p, section.phantomflex section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.phantomflex h2 {
+    position: absolute;
+    margin-top: 28%;
+    color: white;
+    text-align: center;
+    padding: 20px 22%; }
+
 section.products-info-keyboards {
   width: 100%;
   margin-top: 70px; }
@@ -2095,7 +2162,7 @@ section.products-info-keyboards {
               padding-right: 50px;
               max-width: 500px;
               margin: 0 auto; } }
-        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p {
+        section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p, section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h2 {
           margin-top: 20px;
           max-width: 670px;
           font-size: 16px;
@@ -2103,7 +2170,7 @@ section.products-info-keyboards {
           line-height: 25px;
           padding-right: 20px; }
           @media (max-width: 768px) {
-            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p {
+            section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder p, section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.products-info-keyboards .products-info-wrapper .products-optical-keyboards .optical-desc-holder h2 {
               text-align: center;
               margin-left: -45px;
               padding-right: 30px; } }
@@ -2177,14 +2244,14 @@ section.products-info-keyboards {
           color: white;
           font-size: 24px;
           font-weight: 400; }
-        section.products-info-keyboards .products-special-keyboards .special-holder .col-one p {
+        section.products-info-keyboards .products-special-keyboards .special-holder .col-one p, section.products-info-keyboards .products-special-keyboards .special-holder .col-one section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.products-info-keyboards .products-special-keyboards .special-holder .col-one h2 {
           color: #8e8e8e;
           font-weight: 300;
           font-size: 16px;
           line-height: 24px;
           text-align: left;
           padding: 5px 10px 20px 0; }
-          section.products-info-keyboards .products-special-keyboards .special-holder .col-one p a {
+          section.products-info-keyboards .products-special-keyboards .special-holder .col-one p a, section.products-info-keyboards .products-special-keyboards .special-holder .col-one section.grip_styles .gripstyles-wrapper h2 a, section.grip_styles .gripstyles-wrapper section.products-info-keyboards .products-special-keyboards .special-holder .col-one h2 a {
             color: #dbdbdb;
             font-weight: 500; }
       section.products-info-keyboards .products-special-keyboards .special-holder .col-two {
@@ -2197,14 +2264,14 @@ section.products-info-keyboards {
           color: white;
           font-size: 24px;
           font-weight: 400; }
-        section.products-info-keyboards .products-special-keyboards .special-holder .col-two p {
+        section.products-info-keyboards .products-special-keyboards .special-holder .col-two p, section.products-info-keyboards .products-special-keyboards .special-holder .col-two section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.products-info-keyboards .products-special-keyboards .special-holder .col-two h2 {
           text-align: left;
           padding: 5px 10px 20px 0;
           color: #8e8e8e;
           font-weight: 300;
           font-size: 16px;
           line-height: 24px; }
-          section.products-info-keyboards .products-special-keyboards .special-holder .col-two p a {
+          section.products-info-keyboards .products-special-keyboards .special-holder .col-two p a, section.products-info-keyboards .products-special-keyboards .special-holder .col-two section.grip_styles .gripstyles-wrapper h2 a, section.grip_styles .gripstyles-wrapper section.products-info-keyboards .products-special-keyboards .special-holder .col-two h2 a {
             color: #dbdbdb;
             font-weight: 500; }
 
@@ -2357,7 +2424,7 @@ section.products-info-keyboards {
       color: #848484;
       font-weight: 500;
       font-size: 15px; }
-    .proud-item .proud-text p {
+    .proud-item .proud-text p, .proud-item .proud-text section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .proud-item .proud-text h2 {
       padding-top: 70px;
       text-align: justify;
       font-size: 15px; }
