@@ -149,6 +149,92 @@ header {
         header nav .nav-right-side a :hover {
           color: blue; }
 
+section.footer .top-footer {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  background-color: #1e1e1e; }
+  section.footer .top-footer .logo-holder {
+    margin-top: 30px; }
+    section.footer .top-footer .logo-holder img {
+      height: 50%;
+      width: 60%; }
+  section.footer .top-footer .social-holder ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin-left: -150px;
+    margin-top: 30px; }
+    section.footer .top-footer .social-holder ul li {
+      padding-left: 25px;
+      font-size: 35px;
+      color: #8e8e8e; }
+      section.footer .top-footer .social-holder ul li a {
+        color: #8e8e8e; }
+      section.footer .top-footer .social-holder ul li :hover {
+        color: #4d4a4a; }
+  section.footer .top-footer .community-holder {
+    position: relative; }
+    section.footer .top-footer .community-holder h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      padding: 5px; }
+    section.footer .top-footer .community-holder .email-input {
+      height: 50px;
+      width: 80%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      outline: none;
+      color: white;
+      font-size: 20px;
+      padding-left: 15px; }
+    section.footer .top-footer .community-holder .checkbox-input {
+      display: inline-block;
+      margin: 10px 10px 10px 2px; }
+    section.footer .top-footer .community-holder button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      margin-left: -30px;
+      outline: none; }
+      section.footer .top-footer .community-holder button :hover {
+        color: #8e8e8e; }
+    section.footer .top-footer .community-holder p, section.footer .top-footer .community-holder section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.footer .top-footer .community-holder h2 {
+      display: inline-block;
+      color: white;
+      font-size: 17px; }
+    section.footer .top-footer .community-holder:before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 120px;
+      background-color: #8e8e8e;
+      position: absolute;
+      margin-left: -30px;
+      margin-top: 0px; }
+
+section.footer .middle-footer {
+  padding: 50px 100px; }
+  section.footer .middle-footer .middle-footer-wrraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white; }
+
 section.hero h1 {
   font-size: 68px;
   color: white;
@@ -1922,6 +2008,17 @@ section.product-single-keyboards {
         section.product-single-keyboards .product-single .product-single-description ul li {
           font-size: 16px;
           text-align: left; }
+      section.product-single-keyboards .product-single .product-single-description label {
+        font-size: 20px; }
+      section.product-single-keyboards .product-single .product-single-description input[name="size"] {
+        background-color: #000;
+        border: 2px solid white;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 18px;
+        padding: 5px;
+        height: 15px;
+        width: 150px;
+        color: white; }
       section.product-single-keyboards .product-single .product-single-description .product-form {
         margin-top: 20px; }
         section.product-single-keyboards .product-single .product-single-description .product-form p, section.product-single-keyboards .product-single .product-single-description .product-form section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.product-single-keyboards .product-single .product-single-description .product-form h2 {
@@ -2122,8 +2219,7 @@ section.products-info-keyboards {
   width: 100%;
   margin-top: 70px; }
   section.products-info-keyboards .products-info-wrapper {
-    width: 100%;
-    padding: 0px 0 100px 0; }
+    width: 100%; }
     section.products-info-keyboards .products-info-wrapper .products-optical-keyboards {
       display: -webkit-box;
       display: -ms-flexbox;

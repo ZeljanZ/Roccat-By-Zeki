@@ -120,11 +120,23 @@ section.product-single-keyboards{
                     text-align: left;
                 }
             }
+            label{
+                font-size: 20px;
+            }
+            input[name="size"] {
+                background-color: #000;
+                border: 2px solid white;
+                border-radius: 10px 10px 10px 10px;
+                font-size: 18px;
+                padding: 5px;
+                height: 15px;
+                width: 150px;
+                color: white;
+            }
+
 
             .product-form{
                 margin-top: 20px;
-
-
                 p{
                     font-size: 24px;
                     margin-bottom: 35px;

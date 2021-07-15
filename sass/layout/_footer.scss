@@ -1,0 +1,104 @@
+section.footer{
+
+    .top-footer{
+        padding: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        background-color: #1e1e1e;
+
+        .logo-holder{
+            margin-top: 30px;
+            img{
+                height: 50%;
+                width: 60%;
+            }
+        }
+        .social-holder{
+            ul{
+                display: flex;
+                list-style: none;
+                margin-left: -150px;
+                margin-top: 30px;
+                li{
+                    padding-left: 25px;
+                    font-size: 35px;
+                    color: $filter-grey;
+                    a{
+                        color: $filter-grey;
+                    }
+                    :hover{
+                        color: rgb(77, 74, 74);
+                    }
+                }
+            }
+            
+        }
+        .community-holder{
+            position: relative;
+            h2{
+                font-size: 20px;
+                font-weight: 400;
+                color: $white;
+                padding: 5px;
+            }
+            .email-input{
+                height: 50px;
+                width: 80%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $white;
+                outline: none;
+                color: $white;
+                font-size: 20px;
+                padding-left: 15px;
+            }
+            .checkbox-input{
+                display: inline-block;
+                margin: 10px 10px 10px 2px;
+            }
+            button{
+                
+                background-color: transparent;
+                border: none;
+                color: $white;
+                font-size: 20px;
+                cursor: pointer;
+                margin-left: -30px;
+                outline: none;
+                
+                :hover{
+                    color: $filter-grey;
+                }
+        }
+            p{
+                display: inline-block;
+                color: $white;
+                font-size: 17px;
+            }
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 2px;
+                height: 120px;
+                background-color: $filter-grey;
+                position: absolute;
+                margin-left: -30px;
+                margin-top: 0px;
+            }
+        }
+        
+    }
+    .middle-footer{
+        padding: 50px 100px;
+        .middle-footer-wrraper{
+            display: flex;
+            justify-content: space-between;
+            color: $white;
+        
+            .products{
+                
+            }
+        }
+    }
+}
