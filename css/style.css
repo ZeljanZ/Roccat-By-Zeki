@@ -403,6 +403,59 @@ section.footer {
         section.footer .bottom-footer .bottom-holder .zeki:hover {
           color: #ffff66; }
 
+section.error-holder .error-hero {
+  background-color: #111111; }
+  section.error-holder .error-hero h1 {
+    color: white;
+    text-align: center;
+    font-size: 85px;
+    font-weight: 400;
+    padding: 70px 50px 50px 50px; }
+  section.error-holder .error-hero p, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 {
+    padding: 20px 100px;
+    color: white; }
+    section.error-holder .error-hero p a, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2 a, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 a {
+      color: gray; }
+      section.error-holder .error-hero p a:hover, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2 a:hover, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 a:hover {
+        color: white; }
+
+section.error-holder .error-section {
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  section.error-holder .error-section .left-side {
+    margin-left: -250px;
+    margin-top: 100px; }
+    section.error-holder .error-section .left-side ul {
+      list-style-type: square; }
+      section.error-holder .error-section .left-side ul li {
+        padding-bottom: 20px; }
+        section.error-holder .error-section .left-side ul li a {
+          font-size: 24px;
+          color: grey; }
+          section.error-holder .error-section .left-side ul li a:hover {
+            color: white; }
+
+section.error-holder .error-description {
+  margin-left: -450px;
+  margin-top: 100px; }
+  section.error-holder .error-description h2 {
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 30px; }
+  section.error-holder .error-description p, section.error-holder .error-description section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.error-holder .error-description h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px; }
+  section.error-holder .error-description ul {
+    margin-top: 10px;
+    margin-left: 50px; }
+    section.error-holder .error-description ul li {
+      padding-bottom: 10px; }
+
 section.hero h1 {
   font-size: 68px;
   color: white;
