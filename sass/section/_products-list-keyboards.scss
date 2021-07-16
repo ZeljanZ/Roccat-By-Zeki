@@ -75,13 +75,11 @@ section.products-list-keyboards{
             border: 2px solid transparent;
             transition: all .2s ease-in-out;
             position: relative;
-            transition: 0.4s;
             margin-top: 40px;
 
             @media (max-width:$xl) {//1440px
                 width: 28%;
             }
-
             @media (max-width:$lg) {//1024px
                 width: 30%;
             }
@@ -96,7 +94,6 @@ section.products-list-keyboards{
             &:hover{
                 border: 2px solid $filter-grey;
                 cursor: pointer;
-                transition: transform .7s;
                 img{
                     transform: scale(1.08);
                 }
