@@ -410,10 +410,25 @@ section.error-holder .error-hero {
     text-align: center;
     font-size: 85px;
     font-weight: 400;
+    letter-spacing: 2px;
     padding: 70px 50px 50px 50px; }
+    @media (max-width: 1024px) {
+      section.error-holder .error-hero h1 {
+        font-size: 70px;
+        padding: 70px 40px 0px 40px; } }
+    @media (max-width: 768px) {
+      section.error-holder .error-hero h1 {
+        font-size: 60px; } }
+    @media (max-width: 575px) {
+      section.error-holder .error-hero h1 {
+        font-size: 50px;
+        letter-spacing: 2px; } }
   section.error-holder .error-hero p, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 {
     padding: 20px 100px;
     color: white; }
+    @media (max-width: 1440px) {
+      section.error-holder .error-hero p, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 {
+        padding: 20px 20px; } }
     section.error-holder .error-hero p a, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2 a, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 a {
       color: gray; }
       section.error-holder .error-hero p a:hover, section.error-holder .error-hero section.grip_styles .gripstyles-wrapper h2 a:hover, section.grip_styles .gripstyles-wrapper section.error-holder .error-hero h2 a:hover {
@@ -429,23 +444,60 @@ section.error-holder .error-section {
   section.error-holder .error-section .left-side {
     margin-left: -250px;
     margin-top: 100px; }
+    @media (max-width: 1440px) {
+      section.error-holder .error-section .left-side {
+        margin-left: 0px; } }
+    @media (max-width: 1024px) {
+      section.error-holder .error-section .left-side {
+        margin-left: -20px; } }
+    @media (max-width: 768px) {
+      section.error-holder .error-section .left-side {
+        margin-top: 50px;
+        margin-left: 60px; } }
+    @media (max-width: 575px) {
+      section.error-holder .error-section .left-side {
+        margin-top: 50px;
+        margin-left: 60px; } }
     section.error-holder .error-section .left-side ul {
       list-style-type: square; }
       section.error-holder .error-section .left-side ul li {
         padding-bottom: 20px; }
         section.error-holder .error-section .left-side ul li a {
+          text-decoration: underline;
           font-size: 24px;
           color: grey; }
           section.error-holder .error-section .left-side ul li a:hover {
             color: white; }
+          @media (max-width: 768px) {
+            section.error-holder .error-section .left-side ul li a {
+              font-size: 20px; } }
 
 section.error-holder .error-description {
   margin-left: -450px;
   margin-top: 100px; }
+  @media (max-width: 1440px) {
+    section.error-holder .error-description {
+      margin-left: -250px; } }
+  @media (max-width: 1024px) {
+    section.error-holder .error-description {
+      margin-left: 0px; } }
+  @media (max-width: 768px) {
+    section.error-holder .error-description {
+      margin-top: 50px;
+      margin-left: 160px;
+      padding-right: 120px; } }
+  @media (max-width: 575px) {
+    section.error-holder .error-description {
+      margin-top: 50px;
+      margin-left: 90px;
+      padding-right: 30px; } }
   section.error-holder .error-description h2 {
     font-size: 40px;
     font-weight: 400;
     padding-bottom: 30px; }
+    @media (max-width: 575px) {
+      section.error-holder .error-description h2 {
+        font-size: 35px; } }
   section.error-holder .error-description p, section.error-holder .error-description section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper section.error-holder .error-description h2 {
     font-size: 20px;
     font-weight: 400;
@@ -455,6 +507,9 @@ section.error-holder .error-description {
     margin-left: 50px; }
     section.error-holder .error-description ul li {
       padding-bottom: 10px; }
+    @media (max-width: 575px) {
+      section.error-holder .error-description ul {
+        margin-left: 20px; } }
 
 section.hero h1 {
   font-size: 68px;

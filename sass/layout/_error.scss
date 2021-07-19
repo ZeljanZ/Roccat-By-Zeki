@@ -7,11 +7,27 @@ section.error-holder{
             text-align: center;
             font-size: 85px;
             font-weight: 400;
+            letter-spacing: 2px;
             padding: 70px 50px 50px 50px;
+            
+            @media (max-width:$lg) {//1024px
+                font-size: 70px;
+                padding: 70px 40px 0px 40px;
+            }
+            @media (max-width:$md) {//768px
+                font-size: 60px;
+            }
+            @media (max-width:$sm) {//575px
+                font-size: 50px;
+                letter-spacing: 2px;
+            }
         }
         p{
             padding: 20px 100px;
             color: white;
+            @media (max-width:$xl) {//1440px
+                padding: 20px 20px;
+            }
             a{
                 color: gray;
 
@@ -29,6 +45,20 @@ section.error-holder{
         .left-side{
             margin-left: -250px;
             margin-top: 100px;
+            @media (max-width:$xl) {//1440px
+                margin-left: 0px;
+            }
+            @media (max-width:$lg) {//1024px
+                margin-left: -20px;
+            }
+            @media (max-width:$md) {//768px
+                margin-top: 50px;
+                margin-left: 60px;
+            }
+            @media (max-width:$sm) {//575px
+                margin-top: 50px;
+                margin-left: 60px;
+            }
 
             ul{
                 list-style-type: square;
@@ -36,10 +66,14 @@ section.error-holder{
                 li{
                     padding-bottom: 20px;
                     a{
+                        text-decoration: underline;
                         font-size: 24px;
                         color: grey;
                         &:hover{
                             color: $white;
+                        }
+                        @media (max-width:$md) {//768px
+                            font-size: 20px;
                         }
                     }
                 }
@@ -49,11 +83,30 @@ section.error-holder{
     .error-description{
             margin-left: -450px;
             margin-top: 100px;
-
+            @media (max-width:$xl) {//1440px
+                margin-left: -250px;
+            }
+            @media (max-width:$lg) {//1024px
+                margin-left: 0px;
+            }
+            @media (max-width:$md) {//768px
+                margin-top: 50px;
+                margin-left: 160px;
+                padding-right: 120px;
+            }
+            @media (max-width:$sm) {//575px
+                margin-top: 50px;
+                margin-left: 90px;
+                padding-right: 30px;
+            }
+            
             h2{
                 font-size: 40px;
                 font-weight: 400;
                 padding-bottom: 30px;
+                @media (max-width:$sm) {//575px
+                    font-size: 35px;
+                }
             }
             p{
                 
@@ -66,6 +119,9 @@ section.error-holder{
                 margin-left: 50px;
                 li{
                     padding-bottom: 10px;
+                }
+                @media (max-width:$sm) {//575px
+                    margin-left: 20px;
                 }
             }
     }
