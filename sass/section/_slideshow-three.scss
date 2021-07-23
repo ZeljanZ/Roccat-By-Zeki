@@ -26,11 +26,52 @@
             top: 40px;
             padding-left: 50px;
             padding-right: 50px;
+
+            @media (max-width:$xl) { //1440
+                padding-left: 50px;
+                right: 25.5%;
+            }
+            @media (max-width:$lg) {//1024
+                padding-left: 70px;
+                right: 10.5%;
+                top: 20px;
+                font-size: 50px;
+            }
+            @media (max-width:$md) {//768
+                padding-left: 70px;
+                right: 12.5%;
+                top: 20px;
+                font-size: 50px;
+            }
+            @media (max-width:$sm) {//575
+                padding-left: 0px;
+                right: 2.5%;
+                top: 20px;
+                font-size: 45px;
+            }
         }
         img{
-            height: 730px;
-            width: 882px;
+            height: 70%;
+            width: 50%;
             padding-left: 160px;
+            @media (max-width:$xl) {//1440
+                padding-left: 150px;
+                
+            }
+            @media (max-width:$lg) {//1024
+                padding-left: 80px;
+                width: 70%;
+                
+            }
+            @media (max-width:$md) {//768
+                width: 80%;
+                height: 60%;
+            }
+            @media (max-width:$sm) {//575
+                padding: 0;
+                width: 100%;
+                height: 65%;
+            }
         }
 
         .slide-three-caption{
@@ -59,6 +100,37 @@
                 border-right: 26px solid #ffffff;
                 border-left: none;
                 border-bottom: 26px solid transparent;
+                
+                @media (max-width:$lg) {//1024
+                    top: 20%;
+                }
+                @media (max-width:$md) {//768
+                    display: none;
+                }
+                @media (max-width:$sm) {//575
+                    display: none;
+                }
+            }
+            //Size for caption
+            @media (max-width:$lg) {//1024
+                width: 400px;
+                height: 270px;
+                top: 360px;
+                left: 52%;
+            }
+            @media (max-width:$md) {//768
+                width: 390px;
+                height: 250px;
+                top: 400px;
+                left: 24%;
+            }
+            @media (max-width:$sm) {//575
+                padding: 0;
+                margin: 0;
+                width: 325px;
+                height: 230px;
+                top: 440px;
+                left: 22%;
             }
 
             img{
@@ -68,6 +140,17 @@
                 max-height: 95px;
                 max-width: 85px;
                 padding-bottom: 10px;
+                @media (max-width:$lg) {//1024
+                    margin-left: 30px;
+                }
+                @media (max-width:$md) {//768
+                    margin-left: 20px;
+                }
+                @media (max-width:$sm) {//575
+                    margin-left: 200px;
+                    max-height: 75px;
+                    max-width: 65px;
+                }
             }
             .message{
                 font-size: 20px;
@@ -94,6 +177,10 @@
                 text-transform: capitalize;
                 margin-left: 60px;
                 margin-right: 40px;
+                
+                @media (max-width:$md) {//768
+                    padding: 10px 50px;
+                }
 
                 &:hover{
                     background-color: $dark-grey;
@@ -118,11 +205,53 @@
             top: 40px;
             padding-left: 50px;
             padding-right: 50px;
+            @media (max-width:$xl) { //1440
+                padding-left: 50px;
+                right: 25.5%;
+            }
+            @media (max-width:$lg) {//1024
+                padding-left: 70px;
+                right: 10.5%;
+                top: 20px;
+                font-size: 50px;
+            }
+            @media (max-width:$md) {//768
+                padding-left: 70px;
+                right: 12.5%;
+                top: 20px;
+                font-size: 50px;
+            }
+            @media (max-width:$sm) {//575
+                padding-left: 0px;
+                right: 2.5%;
+                top: 20px;
+                font-size: 45px;
+            }
         }
         img{
             height: 730px;
             width: 882px;
             padding-left: 160px;
+            @media (max-width:$xl) {//1440
+                padding-left: 150px;
+                height: 60%;
+                width: 50%;
+            }
+            @media (max-width:$lg) {//1024
+                padding-left: 80px;
+                height: 60%;
+                width: 70%;
+                
+            }
+            @media (max-width:$md) {//768
+                width: 80%;
+                height: 60%;
+            }
+            @media (max-width:$sm) {//575
+                padding: 0;
+                width: 100%;
+                height: 55%;
+            }
         }
         .slide-three-caption{
             background-color: $white;
@@ -150,6 +279,36 @@
                 border-right: 26px solid #ffffff;
                 border-left: none;
                 border-bottom: 26px solid transparent;
+                @media (max-width:$lg) {//1024
+                    top: 20%;
+                }
+                @media (max-width:$md) {//768
+                    display: none;
+                }
+                @media (max-width:$sm) {//575
+                    display: none;
+                }
+            }
+            //Size for caption
+            @media (max-width:$lg) {//1024
+                width: 400px;
+                height: 270px;
+                top: 360px;
+                left: 52%;
+            }
+            @media (max-width:$md) {//768
+                width: 390px;
+                height: 240px;
+                top: 400px;
+                left: 24%;
+            }
+            @media (max-width:$sm) {//575
+                padding: 0;
+                margin: 0;
+                width: 425px;
+                height: 250px;
+                top: 420px;
+                left: 12%;
             }
 
             img{
@@ -159,6 +318,17 @@
                 max-height: 95px;
                 max-width: 85px;
                 padding-bottom: 10px;
+                @media (max-width:$lg) {//1024
+                    margin-left: 30px;
+                }
+                @media (max-width:$md) {//768
+                    margin-left: 40px;
+                }
+                @media (max-width:$sm) {//575
+                    margin-left: 200px;
+                    max-height: 75px;
+                    max-width: 65px;
+                }
             }
             .message{
                 margin-left: -20px;
@@ -210,11 +380,55 @@
             top: 40px;
             padding-left: 50px;
             padding-right: 50px;
+            
+            @media (max-width:$xl) { //1440
+                padding-left: 50px;
+                right: 25.5%;
+            }
+            @media (max-width:$lg) {//1024
+                padding-left: 70px;
+                right: 10.5%;
+                top: 20px;
+                font-size: 50px;
+            }
+            @media (max-width:$md) {//768
+                padding-left: 70px;
+                right: 12.5%;
+                top: 20px;
+                font-size: 50px;
+            }
+            @media (max-width:$sm) {//575
+                padding-left: 0px;
+                right: 2.5%;
+                top: 20px;
+                font-size: 45px;
+            }
         }
         img{
             height: 730px;
             width: 882px;
             padding-left: 160px;
+
+            @media (max-width:$xl) {//1440
+                padding-left: 150px;
+                height: 60%;
+                width: 50%;
+            }
+            @media (max-width:$lg) {//1024
+                padding-left: 80px;
+                height: 60%;
+                width: 70%;
+                
+            }
+            @media (max-width:$md) {//768
+                width: 80%;
+                height: 60%;
+            }
+            @media (max-width:$sm) {//575
+                padding: 0;
+                width: 100%;
+                height: 55%;
+            }
         }
         .slide-three-caption{
             background-color: $white;
@@ -242,6 +456,37 @@
                 border-right: 26px solid #ffffff;
                 border-left: none;
                 border-bottom: 26px solid transparent;
+
+                @media (max-width:$lg) {//1024
+                    top: 20%;
+                }
+                @media (max-width:$md) {//768
+                    display: none;
+                }
+                @media (max-width:$sm) {//575
+                    display: none;
+                }
+            }
+            //Size for caption
+            @media (max-width:$lg) {//1024
+                width: 400px;
+                height: 270px;
+                top: 360px;
+                left: 52%;
+            }
+            @media (max-width:$md) {//768
+                width: 390px;
+                height: 240px;
+                top: 400px;
+                left: 24%;
+            }
+            @media (max-width:$sm) {//575
+                padding: 0;
+                margin: 0;
+                width: 300px;
+                height: 250px;
+                top: 420px;
+                left: 24%;
             }
 
             img{
@@ -250,6 +495,18 @@
                 max-height: 95px;
                 max-width: 85px;
                 padding-bottom: 10px;
+
+                @media (max-width:$lg) {//1024
+                    margin-left: 30px;
+                }
+                @media (max-width:$md) {//768
+                    margin-left: 40px;
+                }
+                @media (max-width:$sm) {//575
+                    margin-left: 200px;
+                    max-height: 75px;
+                    max-width: 65px;
+                }
             }
             .message{
                 margin-left: 50px;
@@ -301,15 +558,59 @@
         top: 40px;
         padding-left: 50px;
         padding-right: 50px;
+        
+        @media (max-width:$xl) { //1440
+            padding-left: 50px;
+            right: 25.5%;
+        }
+        @media (max-width:$lg) {//1024
+            padding-left: 70px;
+            right: 10.5%;
+            top: 20px;
+            font-size: 50px;
+        }
+        @media (max-width:$md) {//768
+            padding-left: 70px;
+            right: 12.5%;
+            top: 20px;
+            font-size: 50px;
+        }
+        @media (max-width:$sm) {//575
+            padding-left: 0px;
+            right: 2.5%;
+            top: 20px;
+            font-size: 45px;
+        }
     }
     img{
         height: 730px;
         width: 882px;
         padding-left: 160px;
+        
+        @media (max-width:$xl) {//1440
+            padding-left: 150px;
+            height: 60%;
+            width: 50%;
+        }
+        @media (max-width:$lg) {//1024
+            padding-left: 80px;
+            height: 60%;
+            width: 70%;
+            
+        }
+        @media (max-width:$md) {//768
+            width: 80%;
+            height: 60%;
+        }
+        @media (max-width:$sm) {//575
+            padding: 0;
+            width: 100%;
+            height: 55%;
+        }
     }
     .slide-three-caption{
         background-color: $white;
-        width: 672px;
+        width: 522px;
         height: 310px;
         display: flex;
         flex-wrap: nowrap;
@@ -333,7 +634,39 @@
             border-right: 26px solid #ffffff;
             border-left: none;
             border-bottom: 26px solid transparent;
+
+            @media (max-width:$lg) {//1024
+                top: 20%;
+            }
+            @media (max-width:$md) {//768
+                display: none;
+            }
+            @media (max-width:$sm) {//575
+                display: none;
+            }
         }
+        //Size for caption
+        @media (max-width:$lg) {//1024
+            width: 510px;
+            height: 270px;
+            top: 360px;
+            left: 40%;
+        }
+        @media (max-width:$md) {//768
+            width: 510px;
+            height: 240px;
+            top: 400px;
+            left: 17%;
+        }
+        @media (max-width:$sm) {//575
+            padding: 0;
+            margin: 0;
+            width: 520px;
+            height: 250px;
+            top: 420px;
+            left: 5%;
+        }
+        
 
         img{
             margin-top: -40px;
@@ -341,38 +674,55 @@
             max-height: 95px;
             max-width: 85px;
             padding-bottom: 10px;
+            
+            @media (max-width:$lg) {//1024
+                margin-left: 150px;
+            }
+            @media (max-width:$md) {//768
+                margin-left: 300px;
+            }
+            @media (max-width:$sm) {//575
+                margin-left: 370px;
+                max-height: 75px;
+                max-width: 65px;
+            }
         }
-        .message{
-            margin-left: 50px;
-            font-size: 20px;
-            color: gray;
-            font-style: italic;
-        }
-        .name{
-            color: gray;
-            font-weight: 300;
-            font-size: 20px;
-            padding-top: 10px;
-            padding-left: 160px;
-            padding-right: 40px;
-            margin-bottom: 10px;
-        }
-        a{
-            text-align: center;
-            padding: 10px 60px;
-            background-color:rgba(25, 25, 25, 0.85);
-            margin: auto;
-            color: $white;
-            border-radius: 50px;
-            font-size: 18px;
-            text-transform: capitalize;
-            margin-left: 100px;
-            margin-right: 40px;
+        .text{
+            margin-left: -50px;
+            
 
-            &:hover{
-                background-color: $dark-grey;
-                cursor: pointer;
+            .message{
+                margin-left: 50px;
+                font-size: 20px;
+                color: gray;
+                font-style: italic;
+            }
+            .name{
+                color: gray;
+                font-weight: 300;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-left: 160px;
+                padding-right: 40px;
+                margin-bottom: 10px;
+            }
+            a{
+                text-align: center;
+                padding: 10px 60px;
+                background-color:rgba(25, 25, 25, 0.85);
+                margin: auto;
                 color: $white;
+                border-radius: 50px;
+                font-size: 18px;
+                text-transform: capitalize;
+                margin-left: 100px;
+                margin-right: 40px;
+
+                &:hover{
+                    background-color: $dark-grey;
+                    cursor: pointer;
+                    color: $white;
+                }
             }
         }
     }

@@ -2,7 +2,7 @@ section.products{
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: $white;
-
+    
     h2{
         color: $black;
         max-width: 1000px;
@@ -28,7 +28,7 @@ section.products{
 
         @media (max-width:$lg) {
             display: block;
-            margin-left: 0px;
+            
         }
         @media (max-width:$md) {
             display: block;
@@ -47,19 +47,6 @@ section.products{
             background-size: cover;
             
             
-            @media (max-width:$lg) {
-                height: 750px;
-                width: auto;
-            }
-            @media (max-width:$md) {
-                height: 550px;
-                width: auto;
-
-            }
-            @media (max-width: $sm) {
-                display: block;
-
-            }
             &:hover{
                 transition: 0.5s;
                 .overlay{
@@ -117,9 +104,7 @@ section.products{
                     width: 90px;
                     margin: 33%;
                     padding: 10px;
-                    @media (max-width:$md) {
-                        margin-left: 295px;
-                    }       
+                        
                 }
             }
         }
