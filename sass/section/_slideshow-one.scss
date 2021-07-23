@@ -13,13 +13,18 @@
     width: 100%;
 
     .slides-des-1{
+      @media (max-width:$xl) {
 
+      }
       .images-holder-1{
           width: auto;
           background-image: url("../img/slide1.jpg");
           background-size:cover;
           background-position: center;
           height: 650px;
+          @media (max-width:$xl) {
+            height: 500px;
+          }
       }
       .text {
         width: auto;
@@ -30,6 +35,13 @@
         position: absolute;
         bottom: 120px;
         text-align:center;
+
+        @media (max-width:$xl) {
+          font-size: 18px;
+        }
+        @media (max-width:$xl) {
+          font-size: 17px;
+        }
       }
       h3{
         @extend .text;
@@ -39,10 +51,13 @@
         text-transform: uppercase;
         padding: 0 35%;
         margin-bottom: -25px;
+        @media (max-width:$xl) {
+          font-size: 42px;
+          bottom: 240px;
+        }
         @media (max-width:$lg) {
-          margin: auto;
-          
-      }
+          font-size: 36px;
+        }
         span{
           color: $yellow;
         }
@@ -62,6 +77,10 @@
         color: gray;
         font-size: 18px;
         text-transform: uppercase;
+        @media (max-width:$xl) {
+          padding: 10px;
+          font-size: 18px;
+        }
 
         &:hover{
             background-color: $white;
@@ -79,6 +98,9 @@
         background-size:cover;
         background-position: center;
         height: 650px;
+        @media (max-width:$xl) {
+          height: 500px;
+        }
     }
     img{
         width: auto;
@@ -86,6 +108,13 @@
         margin: auto;
         position: absolute;
         bottom: 290px;
+
+        @media (max-width:$xl) {
+          height: 170px;
+        }
+        @media (max-width:$lg) {
+          height: 150px;
+        }
     }
     .text {
       width: auto;
@@ -98,6 +127,15 @@
       margin: 0 auto;
       bottom: 190px;
       text-align: center;
+
+      @media (max-width:$xl) {
+        font-size: 18px;
+        width: 400px;
+      }
+      @media (max-width:$lg) {
+        font-size: 17px;
+        padding: 0 90px;
+      }
     }
     a{
         position: absolute;
@@ -113,6 +151,17 @@
         color: gray;
         font-size: 18px;
         text-transform: uppercase;
+
+        @media (max-width:$xl) {
+          font-size: 18px;
+          padding: 10px 50px;
+          left: 16%;
+        }
+        @media (max-width:$lg) {
+          font-size: 16px;
+          padding: 10px 40px;
+          left: 19%;
+        }
 
         &:hover{
             background-color: $white;
@@ -131,6 +180,9 @@
         background-size:cover;
         background-position: center;
         height: 650px;
+        @media (max-width:$xl) {
+          height: 500px;
+        }
     }
     h3{
       position: absolute;
@@ -145,6 +197,11 @@
       margin: auto;
       max-width: 500px;
 
+      @media (max-width:$xl) {
+        font-size: 35px;
+        bottom: 240px;
+      }
+
     }
     .text{
       position: absolute;
@@ -155,6 +212,10 @@
       padding-right: 35px;
       font-size: 20px;
       max-width: 600px;
+
+      @media (max-width:$xl) {
+        font-size: 18px;
+      }
     }
     a{
       position: absolute;
@@ -169,6 +230,17 @@
       color: gray;
       font-size: 18px;
       text-transform: uppercase;
+
+      @media (max-width:$xl) {
+        padding: 10px 50px;
+        font-size: 18px;
+        left: 12%;
+      }
+      @media (max-width:$lg) {
+        padding: 10px 40px;
+        font-size: 18px;
+        left: 17%;
+      }
 
       &:hover{
           background-color: $white;
@@ -194,6 +266,12 @@
     transition: 0.6s ease;
     border-radius: 0 10px 10px 0;
     user-select: none;
+    @media (max-width:$xl) {
+      padding: 25px;
+    }
+    @media (max-width:$lg) {
+      padding: 20px;
+    }
   }
   
   /* Position the "next button" to the right */
@@ -217,7 +295,6 @@
     border-radius: 0;
     display: inline-block;
     transition: background-color 0.6s ease;
-    // transition: 0.2s;
     
   }
   
@@ -225,6 +302,7 @@
     background-color: $orange;
     height: 7px;
     border-radius: 20px;
+    
   }
   
   /* Fading animation */
@@ -236,7 +314,7 @@
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: .8}
     to {opacity: 1}
   }
   

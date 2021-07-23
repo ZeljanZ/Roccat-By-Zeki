@@ -15,7 +15,7 @@ header{
                 display: inline-block;
                 margin-right: 25px;
                 margin: 5px;
-                @media (max-width:$lg){
+                @media (max-width:$md){
                     margin-right: 0;
                 }
 
@@ -42,12 +42,10 @@ header{
         
         padding-top: 15px;
         background-color: $black;
-        
         width: 100%;
         z-index: 2;
-        @media (max-width:$lg){
+        @media (max-width:$md){
             position: relative;
-            
         }
         
 
@@ -55,10 +53,7 @@ header{
             position: fixed;
             top: 0;
             transition: 0.3s;
-            // @media (max-width:$lg){
-            //     position: initial;
-            // }
-            // zelim da je fixed kad zse skrola
+            
 
         }
         .hamburger-menu-button{
@@ -86,7 +81,7 @@ header{
                 color: $blue;
             }
 
-            @media (max-width:$lg){
+            @media (max-width:$md){
                 display: block;
             }
         }
@@ -94,7 +89,7 @@ header{
             text-align: center;
             margin-top: -65px;
             display: none;
-            @media (max-width:$lg){
+            @media (max-width:$md){
                 display: block;
             }
             a{
@@ -108,7 +103,7 @@ header{
             list-style: none;
             float: left;
             
-            @media (max-width:$lg){
+            @media (max-width:$md){
                 display: none;
                 width: 100%;
                 position: absolute;
@@ -134,7 +129,7 @@ header{
                         }
                     }
                 }
-                @media (max-width:$lg){
+                @media (max-width:$md){
                     display: block;
                     text-align: center;
                     margin-bottom: 20px;
@@ -142,7 +137,7 @@ header{
                     font-weight: 600;
                     letter-spacing: 3px;
                 }
-                @media (max-width:$lg){
+                @media (max-width:$md){
                     &:first-child{
                         display: none;
                     }
@@ -171,7 +166,7 @@ header{
             margin-right: 50px;
             margin-top: -1px;
 
-            @media (max-width:$lg){
+            @media (max-width:$md){
                 position: absolute;
                 top: 45px;
                 right: 0;
@@ -179,7 +174,7 @@ header{
                 a{
                     color: $white;
                     font-size: 25px;
-    
+                
                     :hover{
                         color: $blue;
                     }
