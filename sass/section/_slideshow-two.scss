@@ -1,11 +1,132 @@
+%images-holder{
+    width: auto;
+    background-size:cover;
+    background-position: center;
+    height: 650px;
+    @media (max-width:$sm) {
+        height: 550px;
+    }
+}
+%h3{
+    position: absolute;
+    color: $white;
+    bottom: 350px;
+    left: 150px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 1px;
+    padding: 25px;
+    margin: 50px auto;
+        @media (max-width:$xl) {
+            left: 100px;
+            bottom: 300px;
+        }
+        @media (max-width:$lg) {
+            font-size: 35px;
+            bottom: 310px;
+            left: 75px;
+        }
+        @media (max-width:$lg) {
+            font-size: 35px;
+            bottom: 310px;
+            left: 75px;
+        }
+        @media (max-width:$md) {
+            font-size: 40px;
+            bottom: 200px;
+            left: 65px;
+        }
+        @media (max-width:$sm) {
+            font-size: 30px;
+            bottom: 140px;
+            left: 45px;
+        }
+}
+
+%text{
+    width: auto;
+    color: #f2f2f2;
+    max-width: 650px;
+    font-size: 25px;
+    padding: 0px 175px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 270px;
+    line-height: 25px;
+        @media (max-width:$xl) {
+            font-size: 20px;
+            padding: 0px 125px;
+            max-width: 580px;
+        }
+        @media (max-width:$lg) {
+            font-size: 17px;
+            padding: 0px 100px;
+            max-width: 380px;
+            bottom: 260px;
+        }
+        @media (max-width:$md) {
+            font-size: 18px;
+            padding: 0px 90px;
+            max-width: 680px;
+            bottom: 170px;
+        }
+        @media (max-width:$sm) {
+            font-size: 17px;
+            padding: 0px 70px;
+            max-width: 450px;
+            bottom: 100px;
+        }
+}
+%link{
+    position: absolute;
+    bottom: 170px;
+    left: 9%;
+    text-align: center;
+    padding: 15px 120px;
+    background-color:rgba(242, 242, 242, 0.85);
+    margin: auto;
+    color: $dark-grey;
+    border-radius: 50px;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase;
+        @media (max-width:$xl) {
+            font-size: 15px;
+            padding: 10px 70px;
+            bottom: 180px;
+        }
+        @media (max-width:$lg) {
+            font-size: 14px;
+            padding: 10px 40px;
+            bottom: 180px;
+        }
+        @media (max-width:$md) {
+            font-size: 12px;
+            padding: 10px 50px;
+            bottom: 95px;
+            left: 12%;
+        }
+        @media (max-width:$sm) {
+            font-size: 12px;
+            padding: 10px 40px;
+            bottom: 35px;
+            left: 12%;
+        }
+
+    &:hover{
+        background-color: $white;
+        cursor: pointer;
+        color: $dark-grey;
+    }
+}
+
 .slideshow-container-two {
     width:100%;
     position: relative;
     margin: auto;
     height: auto;
-    
-    }
-    
+}
   /* Hide the images by default */
     .mySlides-two {
         display: none;
@@ -13,191 +134,66 @@
 
     .slides-two-des-1{
 
-    .images-holder-1{
-        width: auto;
-        background-image: url("../img/slide-two-1.jpg");
-        background-size:cover;
-        background-position: center;
-        height: 650px;
-    }
-    h3{
-        position: absolute;
-        color: $white;
-        bottom: 350px;
-        left: 150px;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 46px;
-        letter-spacing: 1px;
-        padding: 25px;
-        margin: 50px auto;
-        
-        span{
-            color:#00d2ff;
+        .images-holder-1{
+            @extend %images-holder;
+            background-image: url("../img/slide-two-1.jpg");
+        }
+        h3{
+            @extend %h3;
+            span{
+                color:#00d2ff;
+            }
+            
+        }
+        .text {
+            @extend %text;
+        }
+        a{
+            @extend %link;
         }
     }
-    .text {
-        width: auto;
-        color: #f2f2f2;
-        max-width: 650px;
-        font-size: 25px;
-        padding: 0px 175px;
-        // padding-right: 250px;
-        position: absolute;
-        margin: 0 auto;
-        bottom: 270px;
-        line-height: 35px;
-    }
-    a{
-        position: absolute;
-        bottom: 170px;
-        //@media
-        left: 9%;
-        text-align: center;
-        padding: 15px 120px;
-        background-color:rgba(242, 242, 242, 0.85);
-        margin: auto;
-        color: $dark-grey;
-        border-radius: 50px;
-        color: gray;
-        font-size: 18px;
-        text-transform: uppercase;
-
-        &:hover{
-            background-color: $white;
-            cursor: pointer;
-            color: $dark-grey;
-        }
-    }
-}
 
     .slides-two-des-2{
     
-    .images-holder-2{
-        width: auto;
-        background-image: url("../img/slide-two-2.jpg");
-        background-size:cover;
-        background-position: center;
-        height: 650px;
-    }
-    img{
-        width: auto;
-        padding: 0px 16%;
-        margin: auto;
-        position: absolute;
-        bottom: 290px;
-    }
-    h3{
-        position: absolute;
-        color: $white;
-        bottom: 350px;
-        left: 150px;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 46px;
-        letter-spacing: 1px;
-        padding: 25px;
-        margin: 50px auto;
-        
-        span{
-            color: yellow;
+        .images-holder-2{
+            @extend %images-holder;
+            background-image: url("../img/slide-two-2.jpg");
         }
-    }
-    .text {
-        width: auto;
-        color: #f2f2f2;
-        max-width: 650px;
-        font-size: 26px;
-        padding: 0px 175px;
-        // padding-right: 250px;
-        position: absolute;
-        margin: 0 auto;
-        bottom: 270px;
-        line-height: 35px;
-    }
-    a{
-        position: absolute;
-        bottom: 170px;
-        //@media
-        left: 9%;
-        text-align: center;
-        padding: 15px 120px;
-        background-color:rgba(242, 242, 242, 0.85);
-        margin: auto;
-        color: $dark-grey;
-        border-radius: 50px;
-        color: gray;
-        font-size: 18px;
-        text-transform: uppercase;
 
-        &:hover{
-            background-color: $white;
-            cursor: pointer;
-            color: $dark-grey;
+        h3{
+            @extend %h3;
+            
+            span{
+                color: yellow;
+            }
+        }
+        .text {
+            @extend %text;
+        }
+        a{
+            @extend %link
         }
     }
-    
-}
 
     .slides-two-des-3{
 
-    .images-holder-3{
-        width: 100%;
-        background-image: url("../img/slide-two-3.jpg");
-        background-size:cover;
-        background-position: center;
-        height: 650px;
-    }
-    h3{
-        position: absolute;
-        color: $white;
-        bottom: 350px;
-        left: 150px;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 46px;
-        letter-spacing: 1px;
-        padding: 25px;
-        margin: 50px auto;
-        
-        span{
-            color:#00d2ff;
+        .images-holder-3{
+            @extend %images-holder;
+            background-image: url("../img/slide-two-3.jpg");
+        }
+        h3{
+            @extend %h3;
+            span{
+                color:#00d2ff;
+            }
+        }
+        .text {
+            @extend %text;
+        }
+        a{
+            @extend %link
         }
     }
-    .text {
-        width: auto;
-        color: #f2f2f2;
-        max-width: 650px;
-        font-size: 25px;
-        padding: 0px 175px;
-        // padding-right: 250px;
-        position: absolute;
-        margin: 0 auto;
-        bottom: 270px;
-        line-height: 35px;
-    }
-    a{
-        position: absolute;
-        bottom: 170px;
-        //@media
-        left: 9%;
-        text-align: center;
-        padding: 15px 120px;
-        background-color:rgba(242, 242, 242, 0.85);
-        margin: auto;
-        color: $dark-grey;
-        border-radius: 50px;
-        color: gray;
-        font-size: 18px;
-        text-transform: uppercase;
-
-        &:hover{
-            background-color: $white;
-            cursor: pointer;
-            color: $dark-grey;
-        }
-    }
-}
 }
 
   /* Next & previous buttons */
@@ -215,12 +211,21 @@
         transition: 0.6s ease;
         border-radius: 0 10px 10px 0;
         user-select: none;
+        @media (max-width:$sm) {
+            padding: 20px;
+            border-radius: 0 30px 30px 0;
+        }
     }
 
   /* Position the "next button" to the right */
     .next-two {
     right: 0;
     border-radius: 10px 0 0 10px;
+    @media (max-width:$sm) {
+        padding: 20px;
+        border-radius: 30px 0 0 30px;
+    }
+    
     }
 
   /* On hover, add a black background color with a little bit see-through */
@@ -239,13 +244,14 @@
         display: inline-block;
         transition: background-color 0.6s ease;
         // transition: 0.2s;
+        
     }
     
     .active, .dot-two:hover {
         background-color: $orange;
         height: 7px;
         border-radius: 20px;
-    }
+        
     
   /* Fading animation */
     .fade {
@@ -264,3 +270,4 @@
         from {opacity: .4}
         to {opacity: 1}
     }
+}
