@@ -26,9 +26,15 @@ section.products{
         display: flex;
         justify-content: space-evenly;
 
+        .slideshow-container{
+            width:100%;
+            position: relative;
+            margin: auto;
+            height: auto;
+        }
+
         @media (max-width:$lg) {
             display: block;
-            
         }
         @media (max-width:$md) {
             display: block;
@@ -40,7 +46,7 @@ section.products{
 
         .products-item{
             // background-repeat: no-repeat;
-            height: 320px;
+            height: 300px;
             width: 400px;
             color: $white;
             position: relative;
@@ -51,15 +57,15 @@ section.products{
                 transition: 0.5s;
                 .overlay{
                     display: block;
-                    background-color: rgba(0, 0, 0, 0.5);
+                    background-color: rgba(0, 0, 0, 0.6);
                     position: absolute;
                     top: 0;
                     bottom: 0;
                     right: 0;
                     left: 0;
                 }
-                -webkit-box-shadow: 0 10px 35px 5px #0e0d0d;
-                box-shadow: 0 10px 35px 5px #0e0d0d;
+                -webkit-box-shadow: 0 15px 45px 5px #0e0d0d;
+                box-shadow: 0 15px 45px 5px #0e0d0d;
             }
 
             &.products-kayboard{
@@ -109,5 +115,6 @@ section.products{
             }
         }
     }
+    
     
 }

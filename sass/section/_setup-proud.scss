@@ -8,12 +8,20 @@ section.setup-proud{
     h2{
         text-align: center;
         color: $dark-grey;
-        padding: 90px 20px 80px 20px;
-        font-size: 77px;
+        padding: 90px 20px 40px 20px;
+        font-size: 70px;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: -1.5px;
-        
+        @media (max-width:$md) {
+            font-size: 60px;
+            padding: 90px 20px 40px 20px;
+        }
+        @media (max-width:$md) {
+            font-size: 40px;
+            padding: 90px 20px 30px 20px;
+        }
+
     }
     p{
         text-align: center;
@@ -24,6 +32,14 @@ section.setup-proud{
         max-width: 900px;
         margin: auto;
         padding: 0 20px 50px 20px;
+        @media (max-width:$md) {
+            font-size: 18px;
+            max-width: 600px;
+        }
+        @media (max-width:$md) {
+            font-size: 18px;
+            max-width: 450px;
+        }
     }
     .setup-proud-item{
         width: 100%;
