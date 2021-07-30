@@ -2,7 +2,11 @@ section.products{
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: $white;
-    
+    #four{
+        @media (max-width:$md) {
+            display: none;
+        }
+    }
     h2{
         color: $black;
         max-width: 1000px;
@@ -18,32 +22,35 @@ section.products{
             padding: 15px;
         }
         @media (max-width:$md) {
-            font-size: 30px;
+            font-size: 50px;
             padding: 15px;
         }
     }
-
+    
     /* Slideshow container */
 .slideshow-container-product {
     width: 100%;
     position: relative;
-    margin: auto;
-    }
-
+    
+    
   /* Hide the images by default */
     .mySlides-product {
-    display: none;
-
+        
         .product-items{
             display: flex;
-            justify-content: space-around;
-
+            margin: 0 50px;
+            @media (max-width:$lg) {
+                margin: 0 30px;
+            }
+            @media (max-width:$md) {
+                margin: 0 40px;
+            }
+            
             .producy-wrapper{
                 height: 100%;
                 width: 100%;
-                color: $white;
                 position: relative;
-                background-size: cover;
+                margin: 0 10px;
                 h3{
                     position: absolute;
                     bottom: 25px;
@@ -89,9 +96,162 @@ section.products{
                 }
                 
             }
+            
+            .mice{
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .mice-twoSlide{
+                @media (max-width:$sm) {
+                    // display: none;
+                }
+            }
+            .mousepads{
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .headsets{
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .keyboards-twoSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .mice-twoSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: block;
+                }
+            }
+            .mice-threeSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: block;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .mousepads-twoSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: block;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .headsets-twoSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .keyboards-threeSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .headsets-threeSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: block;
+                }
+            }
+            .mousepads-threeSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .mice-fourSlide{
+                @media (max-width:$lg) {
+                    display: block;
+                }
+                @media (max-width:$md) {
+                    display: none;
+                }
+                @media (max-width:$sm) {
+                    display: none;
+                }
+            }
+            .mousepads-fourSlide{
+                @media (max-width:$md) {
+                    display: block; 
+                }
+                @media (max-width:$sm) {
+                    // display: block;
+                }
+            }
+        }
+        .twoSlide{
+            @media (max-width:$xl) {
+                // display: none;
+            }
+            @media (max-width:$md) {
+                display: flex;
+            }
+        }
+        .threeSlide{
+            @media (max-width:$xl) {
+                // display: none;
+            }
+            @media (max-width:$md) {
+                display: flex;
+            }
+        }
+        .fourSlide{
+            @media (max-width:$xl) {
+                // display: none;
+            }
+            @media (max-width:$sm) {
+                display: block;
+            }
         }
     }
-
+    
+}
   /* Next & previous buttons */
     .prev, .next {
         cursor: pointer;
@@ -106,6 +266,11 @@ section.products{
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        display: none;
+        
+        @media (max-width:$md) {
+            display: block;
+        }
     }
 
   /* Position the "next button" to the right */
@@ -128,10 +293,12 @@ section.products{
         margin: 0 2px;
         background-color: #bbb;
         border-radius: 50%;
-        display: inline-block;
+        display: none;
         transition: background-color 0.6s ease;
+        @media (max-width:$sm) {
+            display: inline-block;
+        }
     }
-
     .active, .dot:hover {
         background-color: #717171;
     }
