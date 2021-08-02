@@ -10,11 +10,12 @@
     text-align: center;
 
     .proud-holder{
-        width: 1300px;
-        height:700px;
-        margin: 5% auto;
+        width: 70%;
+        height:75%;
+        margin: 7% auto;
         position: relative;
         background-color: $white;
+        margin-left: 17%;
         img{
             position: absolute;
             right: 50%;
@@ -122,8 +123,9 @@
 
     a{
         position: absolute;
-        top: 50px;
-        right: 200px;
+        top: 10px;
+        right: 54px;
+        background-color: black;
         color: $white;
         font-size: 30px;
 

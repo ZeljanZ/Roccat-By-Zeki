@@ -30,26 +30,23 @@
         @media (max-width:$sm) {
             font-size: 14px;
             margin-top: 0;
-            
+            padding-top: 0px;
         }
 
         img{
-            width: 400px;
+            width: 60%;
 
-            @media (max-width:1200px) {
-                width:350px;
-            }
             @media (max-width:$xl) { //1440
-                width:72%;
+                width:60%;
             }
             @media (max-width:$lg) { //1024
-                width:250px;
+                width:80%;
             }
             @media (max-width:$md) { //768
-                width:400px;
+                width:70%;
             }
             @media (max-width:$sm) { //575
-                width: 400px;
+                width: 100%;
             }
         }
         h2{
@@ -78,15 +75,15 @@
         }
 
         p{
-            max-width: 300px;
-            margin: auto;
+            max-width: 50%;
+            margin: 0 auto;
             position: relative;
             @media (max-width:$xl) { //1440
                 width:72%;
             }
             @media (max-width:$lg) { //1024
                 font-weight: 400;
-                
+                max-width: 70%;
             }
             @media (max-width:$md) {//768
                 font-size: 20px;
@@ -94,19 +91,18 @@
                 
             }
             @media (max-width:$sm) {//575
-                font-size: 18px;
-                width: 400px;
+                font-size: 19px;
+                width: 100%;
             }
         }
         a{
         position: absolute;
         bottom: -12%;
         left: 33%;
-        // @media
-        text-align: center;
+        // text-align: center;
         padding: 10px 40px;
         background-color:rgba(242, 242, 242, 0.85);
-        margin: 0 auto;
+        // margin: 0 auto;
         color: $dark-grey;
         border-radius: 50px;
         color: gray;
@@ -121,10 +117,12 @@
             
             @media (max-width:$xl) { //1440
                 padding: 10px 20px;
+                font-size: 14px;
                 left: 32%;
             }
             @media (max-width:$lg) { //1024
                 padding: 10px 20px;
+                font-size: 13px;
                 left: 26%;
             }
             @media (max-width:$md) {//768
@@ -133,9 +131,18 @@
                 bottom: 5%;
             }
             @media (max-width:$sm) {//575
-                padding: 10px 50px;
+                padding: 10px 30px;
+                font-size: 12px;
                 left: 32%;
                 bottom: 5%;
+                margin: 0 20PX;
+            }
+            @media (max-width:375px) {//375
+                padding: 10px 30px;
+                font-size: 12px;
+                left: 32%;
+                bottom: 5%;
+                margin: 0 -11PX;
             }
 
         }
