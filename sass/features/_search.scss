@@ -8,44 +8,46 @@
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 3;
     text-align: center;
-    padding: 320px;
+    padding: 320px 0;
 
     a{
+
         position: absolute;
-        top: 250px;
-        right: 600px;
+        top: 50px;
+        right: 50px;
         color: $white;
         font-size: 30px;
 
         :hover{
             color: $blue;
         }
+        @media (max-width:$md) {
+            top: 75px;
+            right: 55px;
+        }
     }
 
     form{
         display: block;
-        margin: auto;
+        margin:  auto;
 
             input{
                 height: 50px;
-                width: 50%;
+                width: 350px;
                 background-color: transparent;
                 border: none;
                 border-bottom: 2px solid $white;
-                outline: none;
                 color: $white;
-                font-size: 20px;
+                font-size: 22px;
                 padding-left: 15px;
             }
             button{
-                
                     background-color: transparent;
                     border: none;
                     color: $white;
                     font-size: 25px;
                     cursor: pointer;
                     margin-left: -45px;
-                    outline: none;
                     
                     :hover{
                         color: $blue;

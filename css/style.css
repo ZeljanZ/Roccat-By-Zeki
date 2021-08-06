@@ -1659,7 +1659,7 @@ section.products {
 
 .mySlides-three .slides-three-des-1 .slide-three-caption, .mySlides-three .slides-three-des-2 .slide-three-caption, .mySlides-three .slides-three-des-3 .slide-three-caption, .mySlides-three .slides-three-des-4 .slide-three-caption {
   background-color: white;
-  width: 25%;
+  width: 31%;
   height: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2887,27 +2887,30 @@ section.products-info-keyboards {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 3;
   text-align: center;
-  padding: 320px; }
+  padding: 320px 0; }
   .search-wrapper a {
     position: absolute;
-    top: 250px;
-    right: 600px;
+    top: 50px;
+    right: 50px;
     color: white;
     font-size: 30px; }
     .search-wrapper a :hover {
       color: blue; }
+    @media (max-width: 768px) {
+      .search-wrapper a {
+        top: 75px;
+        right: 55px; } }
   .search-wrapper form {
     display: block;
     margin: auto; }
     .search-wrapper form input {
       height: 50px;
-      width: 50%;
+      width: 350px;
       background-color: transparent;
       border: none;
       border-bottom: 2px solid white;
-      outline: none;
       color: white;
-      font-size: 20px;
+      font-size: 22px;
       padding-left: 15px; }
     .search-wrapper form button {
       background-color: transparent;
@@ -2915,8 +2918,7 @@ section.products-info-keyboards {
       color: white;
       font-size: 25px;
       cursor: pointer;
-      margin-left: -45px;
-      outline: none; }
+      margin-left: -45px; }
       .search-wrapper form button :hover {
         color: blue; }
 
@@ -2988,26 +2990,35 @@ section.products-info-keyboards {
   z-index: 3;
   text-align: center; }
   .proud-item .proud-holder {
-    width: 70%;
+    width: 65%;
     height: 75%;
-    margin: 7% auto;
-    position: relative;
+    margin: 6% auto;
     background-color: white;
-    margin-left: 17%; }
-    .proud-item .proud-holder img {
-      position: absolute;
-      right: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 1024px) {
+      .proud-item .proud-holder {
+        width: 90%;
+        height: 65%;
+        margin: 16% auto; } }
+    @media (max-width: 768px) {
+      .proud-item .proud-holder {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: auto;
+        margin-bottom: 50px; } }
+    .proud-item .proud-holder .img-holder img {
       -o-object-fit: cover;
          object-fit: cover;
       height: 100%;
-      width: 60%; }
+      width: 100%; }
   .proud-item .proud-text {
     color: black;
-    position: absolute;
-    top: 50px;
-    left: 57%;
     width: auto;
-    padding: 20px; }
+    padding: 20px 50px; }
     .proud-item .proud-text .left-side {
       float: left; }
       .proud-item .proud-text .left-side ul {
@@ -3026,11 +3037,21 @@ section.products-info-keyboards {
       float: right;
       color: #848484;
       font-weight: 500;
-      font-size: 15px; }
+      font-size: 14px;
+      margin-top: 15px;
+      margin-right: 15px; }
+      @media (max-width: 1024px) {
+        .proud-item .proud-text .right-side {
+          font-size: 11px; } }
     .proud-item .proud-text p, .proud-item .proud-text section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .proud-item .proud-text h2 {
       padding-top: 70px;
       text-align: justify;
-      font-size: 15px; }
+      font-size: 15px;
+      padding-right: 50px; }
+      @media (max-width: 1024px) {
+        .proud-item .proud-text p, .proud-item .proud-text section.grip_styles .gripstyles-wrapper h2, section.grip_styles .gripstyles-wrapper .proud-item .proud-text h2 {
+          font-size: 14px;
+          padding-right: 20px; } }
     .proud-item .proud-text .caption {
       float: left;
       margin-top: 30px; }
@@ -3044,7 +3065,17 @@ section.products-info-keyboards {
         float: left;
         margin-top: 30px;
         text-align: justify;
-        margin-left: -100px; }
+        margin-left: -100px;
+        max-width: 100%; }
+        @media (max-width: 1024px) {
+          .proud-item .proud-text .caption details span {
+            margin-left: 10px;
+            margin-top: 15px;
+            font-size: 12px; } }
+        @media (max-width: 768px) {
+          .proud-item .proud-text .caption details span {
+            margin-top: 30px;
+            margin-left: -100px; } }
       .proud-item .proud-text .caption .icone-holder {
         margin-left: 16px; }
         .proud-item .proud-text .caption .icone-holder .fas {
@@ -3071,7 +3102,7 @@ section.products-info-keyboards {
     position: absolute;
     top: 10px;
     right: 54px;
-    background-color: black;
+    text-shadow: 3px 3px #313030;
     color: white;
     font-size: 30px; }
     .proud-item a :hover {
