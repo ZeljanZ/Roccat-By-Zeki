@@ -8,9 +8,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 3;
     text-align: center;
-    @media (max-width:$md) {
-
-    }
+    
     .proud-holder{
         width:65%;
         height:75%;
@@ -43,8 +41,6 @@
         color: $black;
         width: auto;
         padding: 20px 50px;
-        @media (max-width:$xl) {
-        }
 
         .left-side{
             float: left;
